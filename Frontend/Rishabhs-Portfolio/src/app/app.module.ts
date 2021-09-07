@@ -15,6 +15,8 @@ import { ProjectCarouselComponent } from './component/project-carousel/project-c
 
 import { OwlModule } from 'ngx-owl-carousel';
 import { LoginComponent } from './component/login/login.component';
+import { ContactComponent } from './component/contact/contact.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 // import { NgParticlesModule } from 'ng-particles';
 @NgModule({
@@ -28,11 +30,12 @@ import { LoginComponent } from './component/login/login.component';
     FooterComponent,
     ProjectCarouselComponent,
     LoginComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    OwlModule,
+    OwlModule,ReactiveFormsModule
     // ParticlesModule,
     // NgParticlesModule
   ],
