@@ -1,0 +1,16 @@
+<p>project-carousel works!</p>
+
+<div class='container-fluid'>    
+  <div class="row" style="padding: 20px;">    
+      <div class="col-sm-12 btn btn-success">    
+       Use Owl Carousel In Angular 8  
+      </div>    
+  </div>    
+<!-- <owl-carousel [options]="SlideOptions" [items]="images" [carouselClasses]="['owl-theme', 'sliding']" >   -->
+  <div class="item" *ngFor="let img of Images">  
+  <div style="align-content: center">  
+  <img style="height: 260px;width:100px"src={{img}}/>  
+  </div>  
+  </div>  
+  <!-- </owl-carousel>   -->
+</div> 
