@@ -14,6 +14,7 @@ import { FooterComponent } from './component/footer/footer.component';
 import { ProjectCarouselComponent } from './component/project-carousel/project-carousel.component';
 
 import { OwlModule } from 'ngx-owl-carousel';
+import { LoginComponent } from './component/login/login.component';
 
 // import { NgParticlesModule } from 'ng-particles';
 @NgModule({
@@ -26,6 +27,7 @@ import { OwlModule } from 'ngx-owl-carousel';
     ProjectsComponent,
     FooterComponent,
     ProjectCarouselComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
