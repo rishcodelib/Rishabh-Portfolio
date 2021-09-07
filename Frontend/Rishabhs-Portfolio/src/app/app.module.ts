@@ -5,10 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeroimageComponent } from './component/heroimage/heroimage.component';
 import {APP_BASE_HREF} from '@angular/common';
+
+import { NavbarComponent } from './component/navbar/navbar.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HeroimageComponent
+    HeroimageComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
