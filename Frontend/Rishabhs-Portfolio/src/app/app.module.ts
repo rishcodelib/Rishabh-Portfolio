@@ -10,6 +10,7 @@ import { NavbarComponent } from './component/navbar/navbar.component';
 import { ParticleComponent } from './component/particle/particle.component';
 import { AboutComponent } from './component/about/about.component';
 import { ProjectsComponent } from './component/projects/projects.component';
+import { FooterComponent } from './component/footer/footer.component';
 
 // import { NgParticlesModule } from 'ng-particles';
 @NgModule({
@@ -19,7 +20,8 @@ import { ProjectsComponent } from './component/projects/projects.component';
     NavbarComponent,
     ParticleComponent,
     AboutComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
