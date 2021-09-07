@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HeroimageComponent } from './component/heroimage/heroimage.component';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
