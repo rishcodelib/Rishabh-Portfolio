@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/rishcodelib/Rishabh-Portfolio#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^6.0.5"
   }
 }
