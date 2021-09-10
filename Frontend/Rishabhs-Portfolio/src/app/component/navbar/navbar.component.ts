@@ -16,7 +16,6 @@ export class NavbarComponent implements OnInit {
       element.classList.remove('navbar-dark');
       element.classList.add('bg-light');
       element.classList.add('navbar-light');
-      console.log(element);
     } else {
       element.classList.add('bg-transparent');
       element.classList.add('navbar-dark');

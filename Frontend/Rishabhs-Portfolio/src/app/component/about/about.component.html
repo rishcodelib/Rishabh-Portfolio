@@ -1,4 +1,4 @@
-<section class="about-me" (scroll) = onSkillScroll>
+<section class="about-me" (scroll)=onSkillScroll>
 	<div class="container">
 
 		<div class="sc-content">
@@ -49,11 +49,10 @@
 					<div class="row">
 						<div class="col-md-6">
 							<div class="col-md-12">
-								<a class="btn btn-primary"> Hire Me</a>
+								<button (click)='onHireMe()' class="btn btn-primary"> Hire Me</button>
 								&nbsp;
-								<a class="btn btn-secondary"> Request CV</a>
+								<button (click) = 'onRequestCV()' class="btn btn-secondary"> Request CV</button>
 							</div>
-						
 						</div>
 					</div>
 

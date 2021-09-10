@@ -18,6 +18,7 @@ import { LoginComponent } from './component/login/login.component';
 import { ContactComponent } from './component/contact/contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
+import { CarouselModule } from 'ngx-owl-carousel-o';
 // import { NgParticlesModule } from 'ng-particles';
 @NgModule({
   declarations: [
@@ -30,14 +31,14 @@ import { ReactiveFormsModule } from '@angular/forms';
     FooterComponent,
     ProjectCarouselComponent,
     LoginComponent,
-    ContactComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    OwlModule,ReactiveFormsModule
-    // ParticlesModule,
-    // NgParticlesModule
+    OwlModule,ReactiveFormsModule,
+    CarouselModule
+
   ],
   providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
   bootstrap: [AppComponent],
