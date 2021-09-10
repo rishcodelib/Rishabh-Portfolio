@@ -46,4 +46,4 @@ testem.log
 Thumbs.db
 
 #Ignoring Backend Files
-../../Backend/
+../../Backend/*
