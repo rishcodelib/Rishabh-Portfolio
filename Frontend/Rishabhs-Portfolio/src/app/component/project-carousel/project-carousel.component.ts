@@ -12,7 +12,7 @@ export class ProjectCarouselComponent implements OnInit {
 
   customOptions: OwlOptions = {
     loop: true,
-    items:2,
+    items:4,
     autoplay:true,
     center:true,
     mergeFit:true,
@@ -59,6 +59,20 @@ export class ProjectCarouselComponent implements OnInit {
       id: 3,
       src: '../assets/img/travel_route.png',
       alt: 'Project3',
+      title: 'The Travel Route',
+      link:'https://www.github.com/rishcodelib'
+    },
+    {
+      id: 4,
+      src: '../assets/img/travel_route.png',
+      alt: 'Project4',
+      title: 'The Travel Route',
+      link:'https://www.github.com/rishcodelib'
+    },
+    {
+      id: 5,
+      src: '../assets/img/travel_route.png',
+      alt: 'Project5',
       title: 'The Travel Route',
       link:'https://www.github.com/rishcodelib'
     }

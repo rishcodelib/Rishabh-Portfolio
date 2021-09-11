@@ -13,7 +13,7 @@ import { MyProjectsComponent } from './pages/my-projects/my-projects.component';
 
 const routes: Routes = [
   {
-    path:'',
+    path: '',
     pathMatch: 'full',
     redirectTo: '/home',
   },
@@ -34,6 +34,10 @@ const routes: Routes = [
     path: 'contact',
     component: ContactUsComponent,
   },
+  {
+    path:'**',
+    component:HomePageComponent
+  }
 ];
 
 @NgModule({

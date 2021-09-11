@@ -1,44 +1,54 @@
-<section class="project">
+<section class="all-projects">
 	<div class="container">
-		<div class="sc-Head">
-			<div class="row">
-				<div class="col-md-12">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="sc-Head pb-5">
 					<div class="Heading">
-						<p> Projects.</p>
+						Project List
+					</div>
+					<div class="sub-Heading">
+						<span style="text-transform:capitalize;">let's our Advance Worrying become, advance thinking and planing
+						</span>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="sc-content">
-			<div class="owl-carousel owl-theme">
-				<div class="item">
-					<div class="project_image">
-						<img src="./assets/img/erp_portal.png">
-					</div>
-					<div class="project_text">
-						<h5> Resourse Planing System </h5>
-						<p> Enterprise Resourse Planing System, Project made to Control Resourses of an Enterprise alowing them to
-							login and manage the complaints,leaves and other enterprise related information. </p>
+		<div class=" col-md-12">
+			<div class="row">
+				<div class="col-md-4" *ngFor="let item of projectDetails">
+					<div class="project">
+						<div class="card">
+							<div class="card-img-top-div">
+								<img class="card-img-top" [src]="item.image" [alt]="item.alt">
+							</div>
+							<div class="card-body">
+								<h6 class="card-title mb-0">{{item.projectTitle}} </h6>
+								<p class="card-cat ">{{item.tags}}</p>
+								<h6 class="card-text"> {{item.desc}}</h6>
+								<div class="row">
+									<div class="col-md-4">
+										<a class="btn btn-secondary" href="{{item.link.git}}">
+											<i class="fa fa-github"></i> GITHUB </a>
+									</div>
+									<div class="col-md-4">
+										<a class="btn btn-primary " href="{{item.link.demo}}">
+											<i class="fa fa-globe"></i> DEMO</a>
+									</div>
+									<div class="col-md-4">
+										<a class="btn btn-info " href="{{item.link.url}}">
+											<i class="fa fa-link"></i> LIVE</a>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="item">
-					<div class="project_image">
-						<img src="./assets/img/travel_route.png">
-					</div>
-					<div class="project_text">
-						<h5> The Travel Routes </h5>
-						<p> A Travel Website and blog, project available at www.thetravelroutes.com </p>
-					</div>
-				</div>
-				<div class="item">
-					<div class="project_image">
-						<img src="./assets/img/justified_code.png" width="100px">
-					</div>
-					<div class="project_text">
-						<h5> Justified Code</h5>
-						<p> A Business website, currently active at www.justifiedcode.in</p>
-					</div>
-				</div>
+
+
+
+
+
+				<!--  -->
 			</div>
 		</div>
 	</div>

@@ -23,6 +23,7 @@ import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { MyProjectsComponent } from './pages/my-projects/my-projects.component';
+// import { MyprojectComponent } from './component/myproject/myproject.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,6 +40,7 @@ import { MyProjectsComponent } from './pages/my-projects/my-projects.component';
     HomePageComponent,
     ContactUsComponent,
     MyProjectsComponent
+    // MyprojectComponent
   ],
   imports: [
     BrowserModule,
