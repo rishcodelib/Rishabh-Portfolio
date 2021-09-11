@@ -19,7 +19,6 @@ import { ContactComponent } from './component/contact/contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { CarouselModule } from 'ngx-owl-carousel-o';
-// import { NgParticlesModule } from 'ng-particles';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,6 +40,6 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 
   ],
   providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent,NavbarComponent,FooterComponent]
 })
 export class AppModule {}
