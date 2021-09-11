@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-heroimage',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeroimageComponent implements OnInit {
 
-  constructor() { }
+  constructor() { 
+   
+  }
 
   ngOnInit(): void {
   }

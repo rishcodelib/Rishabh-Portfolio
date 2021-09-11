@@ -19,6 +19,10 @@ import { ContactComponent } from './component/contact/contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
+import { ContactUsComponent } from './pages/contact-us/contact-us.component';
+import { MyProjectsComponent } from './pages/my-projects/my-projects.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +34,11 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     FooterComponent,
     ProjectCarouselComponent,
     LoginComponent,
-    ContactComponent
+    ContactComponent,
+    AboutUsComponent,
+    HomePageComponent,
+    ContactUsComponent,
+    MyProjectsComponent
   ],
   imports: [
     BrowserModule,
