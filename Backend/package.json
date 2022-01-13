@@ -17,5 +17,8 @@
     "rishabh-aggarwal.com"
   ],
   "author": "Rishabh Aggarwal",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
 }
