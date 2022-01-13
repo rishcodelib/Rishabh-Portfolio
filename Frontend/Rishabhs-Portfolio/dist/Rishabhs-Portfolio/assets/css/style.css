@@ -1,0 +1,213 @@
+#particles-js {
+    /* position: absolute; */
+    /* width: 100%;
+    height: 100%; */
+    background-color: #1b1a1a;
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.bg-code {
+    /* position: absolute; */
+    /* width: 100%;
+    height: 100%; */
+    height: 100vh;
+    background-color: #1b1a1a;
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+section {
+    padding: 70px 0px;
+}
+.logo-text {
+    font-family: luna bar;
+    font-size: 34px;
+    letter-spacing: 3px;
+}
+
+
+    
+
+.masterContent {
+    text-align: center;
+    color: white;
+    position: absolute;
+    width: 100%;
+    top: 25%;
+}
+.project {
+    background-color: #f7f7f7;
+    font-family: 'Poppins', sans-serif;
+}
+.headText h1.greetings {
+    font-weight: 300;
+    font-size: 33px;
+    color: #ecedee;
+}
+
+.headText h1.name {
+    font-weight: 600;
+    font-size: 38px;
+    margin: 0px;
+    color: #ecedee;
+    font-family:'Caveat', cursive;
+    letter-spacing: 4px;
+}
+
+.headText h1.name span {
+    color: #ecedee;
+}
+
+.auto-typer {
+    border-top: 2px solid #47a3da;
+    padding-top: 10px;
+    margin: 0 auto;
+    width: 16%;
+}
+
+.typer-style {
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.masterContent .user_image {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-size: contain;
+    background-position: center;
+    background-image: url(../img/user.png);
+}
+
+.masterContent .user_image {
+    position: relative;
+    margin: 0 auto;
+}
+
+.sc-Head {
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+
+.sc-Head .Heading {
+    font-size: 25px;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sub-Heading{
+    text-transform: uppercase;
+    color: grey;
+}
+
+.pt-contact {
+    text-align: center;
+}
+
+.sc-media {
+    padding: 25px 0px;
+}
+
+.sc-media .icon {
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    margin: 9px 9px;
+    padding: 16px;
+    color: black;
+}
+
+.sc-media .icon i {
+    color: white;
+}
+
+.sc-media a.icon:hover .fa {
+    color: green;
+    transition: ease-in .8s;
+}
+
+.sc-media a.icon:hover {
+    background-color: white;
+    border: 1px solid black;
+    transition: ease-in .8s;
+}
+.sub-skill{
+    padding: 10px 0px;
+}
+.progress-bar{
+    text-align: left;
+    padding-left: 10px;
+    background-color: black;
+}
+a{
+    text-decoration: none;
+    color: default;
+
+}
+.sc-content .item{
+   max-height: 300px;
+   overflow: hidden;
+   
+  
+}
+.sc-content .project_text h5 {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 10px 0px 0px 0px;
+    text-align: center;
+}
+
+.pt-icon {
+    background-color: #f4f4f4;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    text-align: center;
+    color: black;
+}
+.pt-icon .fa {
+    padding: 28px 0px;
+font-size: 23px;
+}
+.pt-icon:hover{
+  background-color: black;
+  color: #f4f4f4;
+  transition: ease-in .2s;
+}
+.pt-content {
+    padding: 5px 0px 0px 0px;
+}
+.pt-content h6 {
+    margin: 0;
+}
+.pt-content p {
+    color: #808080;
+}
+.form_data {
+    padding: 15px 0px 0px 0px;
+}
+.mybg-black {
+    background-color: black;
+    color: white;
+    height: auto;
+
+}.owl-carousel .owl-item img {
+    display: inline;
+    width: auto;
+}
+
+
+.project_image {
+    min-height: 100px;
+    overflow: hidden;
+    max-height: 100px;
+    text-align: center;
+}
+/* ---- stats.js ---- */    
