@@ -1,0 +1,28 @@
+  <nav class="navbar navbar-expand-md bg-transparent navbar-dark fixed-top" (scroll) = "onWindowScroll($event);">
+		<div class="container">
+			<a class="navbar-brand logo-text " href="#">
+				iAm.Rishabh
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse " id="collapsibleNavbar">
+				<ul class="navbar-nav ml-auto ">
+					<li class="nav-item">
+						<a class="nav-link" [routerLink]= "['/home']" >Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" [routerLink]= "['/about']" >About </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" [routerLink]= "['/projects']" >Projects</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" [routerLink]= "['/contact']" >Contact </a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<router-outlet></router-outlet>
+	

@@ -1,0 +1,26 @@
+<section class=" projects ">
+  <ng-container>
+  
+  <div class="sc-Head ">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="Heading">
+          <p> Projects.</p>
+        </div>
+      </div>
+    </div>
+
+    <owl-carousel-o  [options]="customOptions" (translated)="getPassedData($event)">
+
+      <ng-template  carouselSlide *ngFor="let slide of slidesStore" [id]="slide.id">
+        <h6> {{slide.title}}</h6>
+        <img [src]="slide.src" [alt]="slide.alt" [title]="slide.title" (click)="ProjectClick(slide.id)"
+          style="width:50%;text-align: center;">
+        <br>
+      </ng-template>
+
+    </owl-carousel-o>
+
+  </div>
+</ng-container>
+</section>

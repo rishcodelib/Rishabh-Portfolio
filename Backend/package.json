@@ -1,13 +1,20 @@
 {
+<<<<<<< HEAD
   "name": "rishabhportfolio",
   "version": "1.0.0",
   "description": "",
+=======
+  "name": "rishabh_portfolio",
+  "version": "1.0.0",
+  "description": "Er. Rishabh Aggarwal's portfolio for https://www.rishabh-aggarwal.com,  ",
+>>>>>>> Frontend
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
+<<<<<<< HEAD
     "url": "git+https://github.com/rishcodelib/Rishabh-Portfolio.git"
   },
   "keywords": [
@@ -22,5 +29,22 @@
   "dependencies": {
     "express": "^4.17.1",
     "mongoose": "^6.0.5"
+=======
+    "url": "Rishabh-Portfolio"
+  },
+  "keywords": [
+    "RishabhPortfolio",
+    "RishabhAggarwal",
+    "Portfolio",
+    "rishabh-aggarwal.com"
+  ],
+  "author": "Rishabh Aggarwal",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^11.0.0",
+    "express": "^4.17.2",
+    "mongodb": "^4.3.0",
+    "mongoose": "^6.1.6"
+>>>>>>> Frontend
   }
 }
