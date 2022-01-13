@@ -1,5 +1,7 @@
-<section class="projects  project">
-  <div class="sc-Head">
+<section class=" projects ">
+  <ng-container>
+  
+  <div class="sc-Head ">
     <div class="row">
       <div class="col-md-12">
         <div class="Heading">
@@ -8,7 +10,7 @@
       </div>
     </div>
 
-    <owl-carousel-o [options]="customOptions" (translated)="getPassedData($event)">
+    <owl-carousel-o  [options]="customOptions" (translated)="getPassedData($event)">
 
       <ng-template  carouselSlide *ngFor="let slide of slidesStore" [id]="slide.id">
         <h6> {{slide.title}}</h6>
@@ -20,4 +22,5 @@
     </owl-carousel-o>
 
   </div>
+</ng-container>
 </section>
