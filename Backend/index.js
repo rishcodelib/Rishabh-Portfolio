@@ -1,11 +1,15 @@
-const express =require('express')
-const app = express();
-const port= 3000;
+const express = require('express')
+const { MongoClient } = require('mongodb')
 
-app.get('/',(req,res)=>{
+const app = express();
+
+const port = 3000;
+
+//Routes
+app.get('/', (req, res) => {
   res.send("Rishabh Aggarwal..!")
 })
 
-app.listen(port,() => {
-  console.log(`App is listening at port ${port}` )
+app.listen(port, () => {
+  console.log(`App is listening at port ${port}`)
 })
