@@ -21,6 +21,9 @@ const projectSchema = new mongoose.Schema(
       type: String,
       trim: true
     },
+    date: {
+      type: Date
+    },
     techStack: [{
       type: String,
       trim: true,
@@ -41,7 +44,7 @@ const projectSchema = new mongoose.Schema(
       },
     },
     version: {
-      type: Number 
+      type: Number
     },
     status: {
       enum: ['inprogress', 'completed', 'planned']

@@ -23,6 +23,10 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: true
     },
+    contact: {
+      type: Number,
+      required: true
+    },
     salt: {
       type: String
     },
@@ -35,4 +39,4 @@ const userSchema = new mongoose.Schema(
 
 )
 
-module.exports = mongoose.model('user',userSchema)
+module.exports = mongoose.model('user', userSchema)

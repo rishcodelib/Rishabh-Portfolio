@@ -2,52 +2,61 @@ const mongoose = require('mongoose');
 
 const profileSchema = new mongoose.Schema(
   {
-    projectName: {
+    aboutUser: {
       type: String,
-      maxlength: 50,
-      trim: true,
-
-      required: true
+      maxlength: 150,
     },
-    shortName: {
+    objective: {
       type: String,
-      maxlength: 10,
-      trim: true
+      maxlength: 100,
     },
-    category: {
-      type: String,
-      trim: true
-    },
-    description: {
-      type: String,
-      trim: true
-    },
-    techStack: [{
-      type: String,
-      trim: true,
-      lowercase: true
-    }],
-    url: {
-      demo: {
+    address: {
+      houseNumber: {
+        type: String
+      },
+      street: {
+        type: String
+      },
+      city: {
+        type: String
+      },
+      state: {
         type: String,
-        trim: true
+      },
+      pincode: {
+        type: Number
+      },
+      startDate: {
+        type: Date
+      },
+      endDate: {
+        type: Date,
+        default: null
+      }
+    },
+    links: {
+      fb: {
+        type: String
       },
       git: {
-        type: String,
-        trim: true
+        type: String
       },
-      live: {
-        type: String,
-        trim: true
+      twitter: {
+        type: String
       },
-    },
-    version: {
-      type: Number
-    },
-    status: {
-      enum: [0, 1, 2, 3]
+      linkedin: {
+        type: String
+      },
+      instagram: {
+        type: String
+      },
+      portfolio: {
+        type: String
+      },
+      other: {
+        type: String
+      }
     }
-
   },
   { timestamps: true }
 
