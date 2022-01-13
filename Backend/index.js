@@ -6,7 +6,7 @@ const app = express();
 const SERVER_PORT = 3000
 
 // Connecting to Mongo DB
-connectMongoDB()
+// connectMongoDB()
 
 //Built-in middleware
 app.use(express.json())
@@ -27,7 +27,7 @@ app.get('/', (req, res) => {
 })
 
 //Routes
-app.use('/api/user',userRoutes)
+// app.use('/api/user',userRoutes)
 
 app.listen(SERVER_PORT, () => {
   console.log(`App is listening at port ${SERVER_PORT}`)
