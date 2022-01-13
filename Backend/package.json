@@ -1,0 +1,21 @@
+{
+  "name": "rishabh_portfolio",
+  "version": "1.0.0",
+  "description": "Er. Rishabh Aggarwal's portfolio for https://www.rishabh-aggarwal.com,  ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Rishabh-Portfolio"
+  },
+  "keywords": [
+    "RishabhPortfolio",
+    "RishabhAggarwal",
+    "Portfolio",
+    "rishabh-aggarwal.com"
+  ],
+  "author": "Rishabh Aggarwal",
+  "license": "ISC"
+}
