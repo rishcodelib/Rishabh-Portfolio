@@ -10,16 +10,22 @@ const projectSchema = new mongoose.Schema(
     },
     shortName: {
       type: String,
-      maxlength: 50,
+      maxlength: 10,
+      trim: true
+    },
+    category: {
+      type: String,
       trim: true
     },
     description: {
       type: String,
       trim: true
     },
-    techStack: {
-      type: Array
-    },
+    techStack: [{
+      type: String,
+      trim: true,
+      lowercase: true
+    }],
     url: {
       demo: {
         type: String,
@@ -33,6 +39,12 @@ const projectSchema = new mongoose.Schema(
         type: String,
         trim: true
       },
+    },
+    version: {
+      type: Number 
+    },
+    status: {
+      enum: ['inprogress', 'completed', 'planned']
     }
 
   },
