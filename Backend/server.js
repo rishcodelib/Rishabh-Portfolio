@@ -1,15 +1,19 @@
-const express = require("express")
-const { connectMongo } = require('./config/mongodb')
+const express = require('express')
+const { MongoClient } = require('mongodb')
+const db = require('dotenv');
+// const { connectMongoDB } = require('./config/mongodb');
+const app = express();
+const SERVER_PORT = 3000
 
-const app = express()
+// Connecting to Mongo DB
+// connectMongoDB()
+
+//Built-in middleware
+app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
 
-//App Listening
-app.listen(8080, () => {
-  console.log("Server is Up and running");
-})
-// CORS POLICY
+//CORS policy
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*')
   res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE')
@@ -17,9 +21,14 @@ app.use((req, res, next) => {
   next()
 })
 
-app.get('/', (req, res, next) => {
-  res.json({
-    message: 'API Running',
-  })
+//Handle Requests
+app.get('/', (req, res) => {
+  res.send("Rishabh Aggarwal..!")
 })
 
+//Routes
+// app.use('/api/user',userRoutes)
+
+app.listen(SERVER_PORT, () => {
+  console.log(`App is listening at port ${SERVER_PORT}`)
+})
