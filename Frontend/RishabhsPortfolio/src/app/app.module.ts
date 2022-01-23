@@ -12,6 +12,7 @@ import { SigninComponent } from './component/signin/signin.component';
 import { SignupComponent } from './component/signup/signup.component';
 import { ProjectsComponent } from './component/projects/projects.component';
 import { ProjectCarouselComponent } from './component/project-carousel/project-carousel.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ProjectCarouselComponent } from './component/project-carousel/project-c
     SigninComponent,
     SignupComponent,
     ProjectsComponent,
-    ProjectCarouselComponent
+    ProjectCarouselComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,
