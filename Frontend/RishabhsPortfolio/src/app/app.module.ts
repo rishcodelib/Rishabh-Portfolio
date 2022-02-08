@@ -15,6 +15,9 @@ import { ProjectCarouselComponent } from './component/project-carousel/project-c
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { APP_BASE_HREF } from '@angular/common';
 import { ParticlesComponent } from './component/particles/particles.component';
+import { ProjectPageComponent } from './pages/project-page/project-page.component';
+import { ProjectCardComponent } from './component/project-card/project-card.component';
+import { ProjectTagComponent } from './component/project-tag/project-tag.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,6 +32,9 @@ import { ParticlesComponent } from './component/particles/particles.component';
     ProjectCarouselComponent,
     HomePageComponent,
     ParticlesComponent,
+    ProjectPageComponent,
+    ProjectCardComponent,
+    ProjectTagComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [{ provide: APP_BASE_HREF, useValue: '/' }],

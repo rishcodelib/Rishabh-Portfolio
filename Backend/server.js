@@ -1,13 +1,20 @@
 const express = require('express')
-const { MongoClient } = require('mongodb')
-const userRoutes = require('./routes/userRoutes')
-const db = require('dotenv');
-const { connectMongoDB } = require('./config/mongodb');
 const app = express();
+
+
+// const userRouter = require('./routes/userRoutes')
+// const db = require('dotenv')
+// const { connectMongoDB } = require('./config/mongodb')
 const SERVER_PORT = 3000
 
 // Connecting to Mongo DB
-// connectMongoDB()
+// const mongoose = require('mongoose')
+
+// main().catch(e => console.log(e))
+
+// async function main() {
+//   await mongoose.connect('mongodb://localhost:27017/RishabhPortfolio')
+// }
 
 //Built-in middleware
 app.use(express.json())
@@ -27,8 +34,11 @@ app.get('/', (req, res) => {
   res.send("Rishabh Aggarwal..!")
 })
 
-//Routes
-app.use('/api/user', userRoutes)
+app.get("/api/user", (req, res) => { res.send("geting all users") })
+
+
+// Routes
+// app.use('/api/user', userRoutes)
 
 app.listen(SERVER_PORT, () => {
   console.log(`App is listening at port ${SERVER_PORT}`)

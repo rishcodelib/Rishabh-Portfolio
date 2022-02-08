@@ -21,5 +21,5 @@ export class Project {
     this.liveUrl = liveUrl;
     this.tag = tag;
   }
+  
 }
-
