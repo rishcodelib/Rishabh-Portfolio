@@ -1,1 +1,105 @@
-<p>about works!</p>
+
+<section class="about-me " id="about">
+	<div class="container">
+
+		<div class="sc-content">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="usr-img">
+						<img src="https://www.rishabh-aggarwal.com/assets/img/user.png" class="img-thumbnail">
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div class="sc-Head">
+						<div class="Heading">
+							About Me
+						</div>
+						<div class="sub-Heading">
+							Web Developer
+						</div>
+					</div>
+
+					<div class="sub-Content">
+						<p> A Full Stack Web Developer, with an years of experience in Web-Development and its Frameworks. Well Versed with creating fully Responsive, Static and Dynamic Websites.</p>
+					</div>
+					<div class="sub-skill">
+						<div class="progress ">
+							<div class="progress-bar web_des" data-value="75%"> Javascript</div>
+						</div>
+					</div>
+					<div class="sub-skill">
+						<div class="progress">
+							<div class="progress-bar brand">
+								JAVA Technologies</div>
+						</div>
+					</div>
+					<div class="sub-skill">
+						<div class="progress">
+							<div class="progress-bar web_dev">
+								MEAN Stack Development</div>
+						</div>
+					</div>
+					<div class="sub-skill">
+						<div class="progress ">
+							<div class="progress-bar marketing">
+								LAMPP Stack Development</div>
+						</div>
+					</div>
+
+
+					<a class="btn btn-primary"> Hire Me</a>
+					<button class="btn btn-secondary" data-toggle="modal" data-target="#myModal"> Request CV</button>
+					<!-- The Modal -->
+					<div class="modal" id="myModal">
+						<div class="modal-dialog">
+							<div class="modal-content">
+
+								<!-- Modal Header -->
+								<div class="modal-header">
+									<h4 class="modal-title">Request Resume</h4>
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+								</div>
+
+								<!-- Modal body -->
+								<div class="modal-body">
+									<form action="" method="post" enctype="multipart/form-data">
+										<div class="form-group">
+											<label for="">Your Full Name</label>
+											<input type="text" name="Fname" id="Fname" class="form-control" placeholder="Enter Your name" aria-describedby="helpId" required>
+										</div>
+										<div class="form-group">
+											<label for="">Email ID</label>
+											<input type="email" name="email" id="email" class="form-control" placeholder="Email ID" aria-describedby="helpId" required>
+										</div>
+										<div class="form-group">
+											<label for="">Organization Name:</label>
+											<input type="email" name="organization" id="org" class="form-control" placeholder="Organisation Name" aria-describedby="helpId" required>
+										</div>
+										<div class="form-group">
+											<label for="">Purpose of Resume</label>
+											<select class="form-control" name="purp" id="purp" required>
+												<option value="recruitment">Company Recruitment</option>
+												<option value="freelance">Freelance Work</option>
+												<option value="consultancy">Consultancy </option>
+											</select>
+										</div>
+										<div class="text-center">
+											<button type="button" name="submit" id="submit" onclick="resumeRequest()" class="btn btn-info"> Request Now</button>
+										</div>
+									</form>
+								</div>
+
+								<!-- Modal footer -->
+								<div class="modal-footer ">
+									<a href="mail-to:info@rishabh-aggarwal.com" class="btn btn-primary"> Send us Mail </a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
