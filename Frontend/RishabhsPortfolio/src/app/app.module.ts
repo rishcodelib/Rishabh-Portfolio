@@ -18,6 +18,7 @@ import { ParticlesComponent } from './component/particles/particles.component';
 import { ProjectPageComponent } from './pages/project-page/project-page.component';
 import { ProjectCardComponent } from './component/project-card/project-card.component';
 import { ProjectTagComponent } from './component/project-tag/project-tag.component';
+import { AboutPageComponent } from './pages/about-page/about-page.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,6 +36,7 @@ import { ProjectTagComponent } from './component/project-tag/project-tag.compone
     ProjectPageComponent,
     ProjectCardComponent,
     ProjectTagComponent,
+    AboutPageComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
