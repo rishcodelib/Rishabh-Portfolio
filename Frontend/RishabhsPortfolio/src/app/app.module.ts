@@ -19,6 +19,7 @@ import { ProjectPageComponent } from './pages/project-page/project-page.componen
 import { ProjectCardComponent } from './component/project-card/project-card.component';
 import { ProjectTagComponent } from './component/project-tag/project-tag.component';
 import { AboutPageComponent } from './pages/about-page/about-page.component';
+
 @NgModule({
   declarations: [
     AppComponent,
