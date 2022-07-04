@@ -12,7 +12,7 @@ export class ProjectServiceService {
         'A Complete E-Commerce solution for customers, vendors & distrubuters.',
       liveUrl: 'https://ecommerceapp-14994.web.app/',
       gitUrl: 'https://github.com/rishcodelib/Ecommerce-App-JAVA',
-      imgSrc: null,
+      imgSrc: '../assets/images/no_image.png',
       tag: ['JAVA', 'Spring Boot', 'Angular'],
     },
     {
@@ -21,7 +21,7 @@ export class ProjectServiceService {
       description: 'Lorem Ipsum Dolor Sit Description.. ',
       liveUrl: 'https://rishabhportfolio-c57dc.web.app/home',
       gitUrl: 'https://github.com/rishcodelib',
-      imgSrc: null,
+      imgSrc: '../assets/images/Portfolio.png',
       tag: ['NodeJS', 'ExpressJS', 'Angular'],
     },
     {
@@ -56,7 +56,29 @@ export class ProjectServiceService {
       gitUrl: null,
       imgSrc:
         'https://www.rishabh-aggarwal.com/assets/project_logos/travel_routes.png',
-      tag: ['Java', 'Wordpress'],
+      tag: ['Wordpress'],
+    },
+    {
+      key: 6,
+      projectName: 'My Market',
+      alias: null,
+      description: 'A Complete Web Shopping Application.',
+      liveUrl: 'https://www.rishabh-aggarwal.com/wp_projects/mymarket/',
+      gitUrl: null,
+      imgSrc:
+        '../assets/images/MyMarket.png',
+      tag: ['Wordpress'],
+    },
+    {
+      key: 6,
+      projectName: 'The Rashan Store',
+      alias: null,
+      description: 'A Multi Utility Online Grocercy Store.',
+      liveUrl: 'https://www.rishabh-aggarwal.com/wp_projects/rashÍ›',
+      gitUrl: null,
+      imgSrc:
+        '../assets/images/RashanStore.png',
+      tag: ['Wordpress'],
     },
   ];
 }
