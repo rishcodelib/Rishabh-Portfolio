@@ -18,7 +18,7 @@ export class ProjectCardComponent implements OnInit {
   // const MyProject: Array = JSON.parse(pservice);
   ngOnInit(): void {
   }
-  constructor(private mp: ProjectServiceService) {
+  constructor(public mp: ProjectServiceService) {
     mp.project.forEach((myproj: any) => {
       this.title = myproj.projectName;
       this.src = myproj.imgSrc;
@@ -28,5 +28,7 @@ export class ProjectCardComponent implements OnInit {
       this.tag = myproj.tag;
       // console.log(myproj);
     });
+    console.log(mp);
   }
 }
+

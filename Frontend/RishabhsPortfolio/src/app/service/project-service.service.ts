@@ -56,7 +56,7 @@ export class ProjectServiceService {
       gitUrl: null,
       imgSrc:
         'https://www.rishabh-aggarwal.com/assets/project_logos/travel_routes.png',
-      tag: ['Java','Wordpress'],
+      tag: ['Java', 'Wordpress'],
     },
   ];
 }

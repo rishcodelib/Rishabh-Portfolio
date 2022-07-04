@@ -1,22 +1,29 @@
 <div class="project-card">
-  <div class="col-md-3">
-    <div class="card">
-      <img class="card-img-top" src="{{src}}" alt="projectalias">
-      <div class="card-body">
-        <h5 class="card-title">{{title}}</h5>
-        <p class="card-text">{{desc}}</p>
-        <span *ngFor="let item of tag">
-          <app-project-tag [tag]="item"></app-project-tag>
-        </span>
-        <div class="row">
-          <div class="col-md-3">
-            <a href="{{git}}" class="btn btn-primary">GITHUB</a>
-          </div>
-          <div class="col-md-3">
-            <a href="{{url}}" class="btn btn-danger">LIVE</a>
+  <div class="row">
+    <!-- Loop Start -->
+    <div class="col-md-4" *ngFor="let project of mp.project">
+      <div class="card">
+        <img class="card-img-top" src="{{project.imgSrc}}" alt="projectImage">
+        <div class="card-body">
+          <h5 class="card-title">{{project.projectName}}</h5>
+          <p class="card-text">{{project.description}}</p>
+          <span *ngFor="let item of tag">
+            <app-project-tag class="tag" [tag]="item"></app-project-tag>
+          </span>
+          <div class="row">
+            <div class="col-md-4">
+              <a href="{{project.gitUrl}}" class="btn btn-git">GITHUB</a>
+            </div>
+            <div class="col-md-4">
+              <a href="{{project.liveurl}}" class="btn btn-live">LIVE</a>
+            </div>
+            <div class="col-md-4">
+              <a href="{{project.url}}" class="btn btn-demo">DEMO</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- Loop END -->
   </div>
 </div>
