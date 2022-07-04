@@ -56,7 +56,7 @@ export class ProjectServiceService {
       gitUrl: null,
       imgSrc:
         'https://www.rishabh-aggarwal.com/assets/project_logos/travel_routes.png',
-      tag: ['Wordpress'],
+      tag: ['Wordpress', 'Elementor by WP'],
     },
     {
       key: 6,
@@ -65,9 +65,8 @@ export class ProjectServiceService {
       description: 'A Complete Web Shopping Application.',
       liveUrl: 'https://www.rishabh-aggarwal.com/wp_projects/mymarket/',
       gitUrl: null,
-      imgSrc:
-        '../assets/images/MyMarket.png',
-      tag: ['Wordpress'],
+      imgSrc: '../assets/images/MyMarket.png',
+      tag: ['Wordpress', 'Elementor by WP', 'Bootstrap'],
     },
     {
       key: 6,
@@ -76,9 +75,18 @@ export class ProjectServiceService {
       description: 'A Multi Utility Online Grocercy Store.',
       liveUrl: 'https://www.rishabh-aggarwal.com/wp_projects/rashÍ›',
       gitUrl: null,
-      imgSrc:
-        '../assets/images/RashanStore.png',
-      tag: ['Wordpress'],
+      imgSrc: '../assets/images/RashanStore.png',
+      tag: ['Wordpress', 'Elementor by WP', 'Bootstrap'],
+    },
+    {
+      key: 6,
+      projectName: 'Justified Code',
+      alias: null,
+      description: 'A landing page for company, bussinesses . . . ',
+      liveUrl: 'https://justified-code-f9ec1.firebaseapp.com/',
+      gitUrl: null,
+      imgSrc: '../assets/images/no_image.png',
+      tag: ['HTML', 'CSS', 'Bootstrap', 'Javascript'],
     },
   ];
 }
