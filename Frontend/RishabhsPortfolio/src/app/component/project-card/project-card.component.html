@@ -1,27 +1,32 @@
 <div class="project-card">
   <div class="row">
     <!-- Loop Start -->
-    <div class="col-md-4" *ngFor="let project of mp.project">
+    <div class="col-md-3" *ngFor="let project of mp.project">
       <div class="card">
         <img class="card-img-top" src="{{project.imgSrc}}" alt="projectImage">
         <div class="card-body">
           <h5 class="card-title">{{project.projectName}}</h5>
           <p class="card-text">{{project.description}}</p>
-          <span *ngFor="let item of tag">
+          <span *ngFor="let item of project.tag">
             <app-project-tag class="tag" [tag]="item"></app-project-tag>
           </span>
-          <div class="row">
-            <div class="col-md-4">
-              <a href="{{project.gitUrl}}" class="btn btn-git">GITHUB</a>
-            </div>
-            <div class="col-md-4">
-              <a href="{{project.liveurl}}" class="btn btn-live">LIVE</a>
-            </div>
-            <div class="col-md-4">
-              <a href="{{project.url}}" class="btn btn-demo">DEMO</a>
-            </div>
+        </div>
+        <hr class="divider">
+        <div class="row">
+          <div class="col-md-3 ">
+            <a href="{{project.gitUrl}}" class="btn process-btn btn-git ">GITHUB</a>
+          </div>
+          <div class="col-md-3">
+            <a href="{{project.liveurl}}" class="btn process-btn btn-live">LIVE</a>
+          </div>
+          <div class="col-md-3">
+            <a href="{{project.url}}" class="btn process-btn btn-demo">DEMO</a>
+          </div>
+          <div class="col-md-3">
+            <a href="{{project.url}}" class="btn process-btn btn-one">Details</a>
           </div>
         </div>
+        <!-- </div>Card Bodt -->
       </div>
     </div>
     <!-- Loop END -->
