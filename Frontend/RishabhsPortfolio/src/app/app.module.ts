@@ -20,6 +20,7 @@ import { ProjectCardComponent } from './component/project-card/project-card.comp
 import { ProjectTagComponent } from './component/project-tag/project-tag.component';
 import { AboutPageComponent } from './pages/about-page/about-page.component';
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
+import { TechDividerComponent } from './component/tech-divider/tech-divider.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { ContactPageComponent } from './pages/contact-page/contact-page.componen
     ProjectTagComponent,
     AboutPageComponent,
     ContactPageComponent,
+    TechDividerComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
