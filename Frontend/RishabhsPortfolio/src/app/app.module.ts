@@ -19,6 +19,7 @@ import { ProjectPageComponent } from './pages/project-page/project-page.componen
 import { ProjectCardComponent } from './component/project-card/project-card.component';
 import { ProjectTagComponent } from './component/project-tag/project-tag.component';
 import { AboutPageComponent } from './pages/about-page/about-page.component';
+import { ContactPageComponent } from './pages/contact-page/contact-page.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { AboutPageComponent } from './pages/about-page/about-page.component';
     ProjectCardComponent,
     ProjectTagComponent,
     AboutPageComponent,
+    ContactPageComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
