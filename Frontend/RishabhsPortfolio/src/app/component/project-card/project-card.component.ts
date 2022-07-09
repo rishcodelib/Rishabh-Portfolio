@@ -1,6 +1,6 @@
 import { ArrayType } from '@angular/compiler';
 import { Component, Input, OnInit } from '@angular/core';
-import { ProjectServiceService } from 'src/app/service/project-service.service';
+import { AllProjectsService } from 'src/app/service/projects/all-projects.service';
 
 @Component({
   selector: 'app-project-card',
@@ -18,7 +18,7 @@ export class ProjectCardComponent implements OnInit {
   // const MyProject: Array = JSON.parse(pservice);
   ngOnInit(): void {
   }
-  constructor(public mp: ProjectServiceService) {
+  constructor(public mp: AllProjectsService) {
     mp.project.forEach((myproj: any) => {
       this.title = myproj.projectName;
       this.src = myproj.imgSrc;

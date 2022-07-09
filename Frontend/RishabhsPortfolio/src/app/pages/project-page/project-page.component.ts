@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ProjectServiceService } from 'src/app/service/project-service.service';
+import { AllProjectsService } from 'src/app/service/projects/all-projects.service';
 
 @Component({
   selector: 'app-project-page',
@@ -7,5 +7,5 @@ import { ProjectServiceService } from 'src/app/service/project-service.service';
   styleUrls: ['./project-page.component.sass'],
 })
 export class ProjectPageComponent {
-  public pservice = ProjectServiceService;
+  public pservice = AllProjectsService;
 }

@@ -21,6 +21,8 @@ import { ProjectTagComponent } from './component/project-tag/project-tag.compone
 import { AboutPageComponent } from './pages/about-page/about-page.component';
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
 import { TechDividerComponent } from './component/tech-divider/tech-divider.component';
+import { SocialMediaComponent } from './component/social-media/social-media.component';
+import { CertiComponent } from './component/certifications/certi.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +44,8 @@ import { TechDividerComponent } from './component/tech-divider/tech-divider.comp
     AboutPageComponent,
     ContactPageComponent,
     TechDividerComponent,
+    SocialMediaComponent,
+    CertiComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [{ provide: APP_BASE_HREF, useValue: '/' }],

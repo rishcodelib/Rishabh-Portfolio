@@ -25,17 +25,17 @@
         </div>
         <hr class="divider">
         <div class="row">
-          <div class="col-md-3 ">
+          <div *ngIf="project.gitUrl" class="col-md-3 ">
             <a href="{{project.gitUrl}}" class="btn process-btn btn-git ">GITHUB</a>
           </div>
-          <div class="col-md-3">
-            <a href="{{project.liveurl}}" class="btn process-btn btn-live">LIVE</a>
+          <div *ngIf="project.liveUrl" class="col-md-3 text-center">
+            <a href="{{project.liveUrl}}" class="btn process-btn btn-live">LIVE</a>
           </div>
-          <div class="col-md-3">
-            <a href="{{project.url}}" class="btn process-btn btn-demo">DEMO</a>
+          <div *ngIf="project.demoUrl" class="col-md-3">
+            <a href="{{project.demoUrl}}" class="btn process-btn btn-demo">DEMO</a>
           </div>
-          <div class="col-md-3">
-            <a href="{{project.url}}" class="btn process-btn btn-one">Details</a>
+          <div *ngIf="!project.key" class="col-md-3">
+            <a href="{{project.key}}" class="btn process-btn btn-one">Details </a>
           </div>
         </div>
         <!-- </div>Card Bodt -->
