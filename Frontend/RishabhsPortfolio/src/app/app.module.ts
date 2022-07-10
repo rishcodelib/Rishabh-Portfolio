@@ -23,6 +23,7 @@ import { ContactPageComponent } from './pages/contact-page/contact-page.componen
 import { TechDividerComponent } from './component/tech-divider/tech-divider.component';
 import { SocialMediaComponent } from './component/social-media/social-media.component';
 import { CertiComponent } from './component/certifications/certi.component';
+import { ProfSmComponent } from './component/prof-sm/prof-sm.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { CertiComponent } from './component/certifications/certi.component';
     TechDividerComponent,
     SocialMediaComponent,
     CertiComponent,
+    ProfSmComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
