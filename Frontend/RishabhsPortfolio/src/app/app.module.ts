@@ -24,6 +24,7 @@ import { TechDividerComponent } from './component/tech-divider/tech-divider.comp
 import { SocialMediaComponent } from './component/social-media/social-media.component';
 import { CertiComponent } from './component/certifications/certi.component';
 import { ProfSmComponent } from './component/prof-sm/prof-sm.component';
+import { SkillBarComponent } from './component/skill-bar/skill-bar/skill-bar.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import { ProfSmComponent } from './component/prof-sm/prof-sm.component';
     SocialMediaComponent,
     CertiComponent,
     ProfSmComponent,
+    SkillBarComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
