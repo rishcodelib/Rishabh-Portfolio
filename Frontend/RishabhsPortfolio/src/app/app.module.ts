@@ -25,6 +25,7 @@ import { SocialMediaComponent } from './component/social-media/social-media.comp
 import { CertiComponent } from './component/certifications/certi.component';
 import { ProfSmComponent } from './component/prof-sm/prof-sm.component';
 import { SkillBarComponent } from './component/skill-bar/skill-bar/skill-bar.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,7 @@ import { SkillBarComponent } from './component/skill-bar/skill-bar/skill-bar.com
     ProfSmComponent,
     SkillBarComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule,ReactiveFormsModule],
   providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
   bootstrap: [AppComponent],
 })
