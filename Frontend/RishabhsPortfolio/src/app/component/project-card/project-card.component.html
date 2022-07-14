@@ -1,20 +1,18 @@
-<div class="jumbotron">
-  <h1 class="display-3 text-center pt-3">Projects</h1>
-  <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor quaerat in doloribus vitae. Quisquam,
-    aut? Exercitationem aliquam quis quia! Ab reprehenderit aspernatur voluptatem. Similique asperiores cumque optio
-    tempore ea atque.</p>
-  <hr class="my-2">
-  <p>Category for Projects</p>
-  <p class="lead">
-    <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Select from herew</a>
-  </p>
+<div class="jumbotron container">
+  <h1 class="display-5 text-center pt-3">Projects</h1>
+  <p class="lead text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+  <!-- <p>Category for Projects</p> -->
+  <!-- <p class="lead">
+      <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Select from herew</a>
+    </p> -->
 </div>
+<hr class="my-6">
 
-<div class="project-card">
+<div class="project-card container">
   <div class="row">
     <!-- Loop Start -->
-    <div class="col-md-6 col-lg-3 " *ngFor="let project of mp.project">
-      <div class="card">
+    <div class="col-md-6 col-lg-3 px-2" *ngFor="let project of mp.project">
+      <div class="card border-0 bg-light">
         <img class="card-img-top" src="{{project.imgSrc}}" alt="projectImage">
         <div class="card-body">
           <h5 class="card-title">{{project.projectName}}</h5>
