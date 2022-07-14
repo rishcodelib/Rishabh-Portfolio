@@ -8,9 +8,13 @@ $fontPath: '/assets/font/'
   // top: 60px
   // left: 50%
   // position: relative
+.greetings
+  font-weight: 300
+  font-size: 33px
+  color: #ecedee
 
 .masterContent
-  background-image: url(#{$imagePath}bg.jpeg)
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(#{$imagePath}bg.jpeg)
   min-height: 35rem
   background-size: cover
   position: absolute
@@ -29,14 +33,18 @@ $fontPath: '/assets/font/'
   background-size: contain
   background-position: center
   background-image: url("https://www.rishabh-aggarwal.com/assets/img/user.png")
+  fill: 50%
 
 .headText h1.name
-  font-weight: 600
-  font-size: 38px
+  font-weight: 400
+  font-size: 100px
   margin: 0px
-  color: #ecedee
+  color: #ecedee, black
   font-family: 'Caveat', cursive
-  letter-spacing: 4px
+  letter-spacing: 6px
+  background-clip: text
+  -webkit-text-fill-color: transparent
+  background-image: linear-gradient(121deg, #ffffff, #feffd9cc, #baff00)
 
 .auto-typer
   border-top: 2px solid #47a3da
@@ -44,24 +52,24 @@ $fontPath: '/assets/font/'
   margin: 0 auto
   width: 15%
 
-.sc-media 
-    padding: 25px 0
+.sc-media
+  padding: 25px 0
 
-.sc-media .icon 
-    background-color: #000
-    width: 50px
-    height: 50px
-    border-radius: 100px
-    margin: 9px
-    padding: 16px
-    color: #000
+.sc-media .icon
+  background-color: #000
+  width: 50px
+  height: 50px
+  border-radius: 100px
+  margin: 9px
+  padding: 16px
+  color: #000
 
-.sc-media .icon i 
-    color: #fff
+.sc-media .icon i
+  color: #fff
 
-.masterContent 
-    text-align: center
-    color: #fff
+.masterContent
+  text-align: center
+  color: #fff
     // position: absolute
-    width: 100%
+  width: 100%
     // top: 40%
