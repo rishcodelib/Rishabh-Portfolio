@@ -15,9 +15,7 @@ export class ProjectCardComponent implements OnInit {
   public git: any;
   public tag: any;
   @Input() public pservice: any;
-  // const MyProject: Array = JSON.parse(pservice);
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
   constructor(public mp: AllProjectsService) {
     mp.project.forEach((myproj: any) => {
       this.title = myproj.projectName;
@@ -26,9 +24,7 @@ export class ProjectCardComponent implements OnInit {
       this.url = myproj.liveurl;
       this.git = myproj.gitUrl;
       this.tag = myproj.tag;
-      // console.log(myproj);
     });
     console.log(mp);
   }
 }
-
