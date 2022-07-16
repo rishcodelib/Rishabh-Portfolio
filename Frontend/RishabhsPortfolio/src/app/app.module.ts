@@ -28,6 +28,8 @@ import { SkillBarComponent } from './component/skill-bar/skill-bar/skill-bar.com
 import { ReactiveFormsModule } from '@angular/forms';
 import { CodeAssesmentBarComponent } from './component/code-assesment-bar/code-assesment-bar.component';
 import { HttpClientModule } from '@angular/common/http';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,13 +54,15 @@ import { HttpClientModule } from '@angular/common/http';
     CertiComponent,
     ProfSmComponent,
     SkillBarComponent,
-    CodeAssesmentBarComponent,
+    CodeAssesmentBarComponent
+   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
+    
   ],
   providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
   bootstrap: [AppComponent],
