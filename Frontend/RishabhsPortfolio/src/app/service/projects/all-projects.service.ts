@@ -21,7 +21,7 @@ export class AllProjectsService {
       description: 'Lorem Ipsum Dolor Sit Description.. ',
       liveUrl: 'https://rishabh-aggarwal.com',
       gitUrl: 'https://github.com/rishcodelib',
-      demoUrl: 'https://rishabhportfolio-c57dc.web.app/home',
+      demoUrl: 'https://rishabhaggarwal-bae83.web.app/home',
       imgSrc: '../assets/images/Portfolio.png',
       tag: ['NodeJS', 'ExpressJS', 'Angular'],
     },
