@@ -1,7 +1,6 @@
 <div class="jumbotron container">
   <h1 class="display-5 text-center pt-3">Projects</h1>
   <p class="lead text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-
 </div>
 <hr class="my-6">
 
@@ -20,17 +19,14 @@
         </div>
         <hr class="divider">
         <div class="row">
-          <div *ngIf="project.gitUrl" class="col-md-3 ">
-            <a href="{{project.gitUrl}}" class="btn process-btn btn-git ">GITHUB</a>
-          </div>
-          <div *ngIf="project.liveUrl" class="col-md-3 text-center">
+          <div *ngIf="project.liveUrl" class="col-md-4  ">
             <a href="{{project.liveUrl}}" class="btn process-btn btn-live">LIVE</a>
           </div>
-          <div *ngIf="project.demoUrl" class="col-md-3">
+          <div *ngIf="project.demoUrl" class="col-md-4 text-center">
             <a href="{{project.demoUrl}}" class="btn process-btn btn-demo">DEMO</a>
           </div>
-          <div *ngIf="!project.key" class="col-md-3">
-            <a href="{{project.key}}" class="btn process-btn btn-one">Details </a>
+          <div *ngIf="project.gitUrl" class="col-md-4 text-right ">
+            <a href="{{project.gitUrl}}" class="btn process-btn btn-git ">GITHUB</a>
           </div>
         </div>
         <!-- </div>Card Bodt -->

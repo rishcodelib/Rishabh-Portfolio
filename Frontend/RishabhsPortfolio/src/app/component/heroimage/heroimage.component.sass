@@ -17,7 +17,7 @@ $fontPath: '/assets/font/'
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(#{$imagePath}bg.jpeg)
   min-height: 35rem
   background-size: cover
-  position: absolute
+  // position: absolute
   // filter: brightness(0.5)
 
 .masterContent .user_image
@@ -70,6 +70,13 @@ $fontPath: '/assets/font/'
 .masterContent
   text-align: center
   color: #fff
-    // position: absolute
   width: 100%
-    // top: 40%
+
+.sc-media a.icon:hover
+  background-color: white
+  border: 1px solid black
+  transition: ease-in .8s
+
+.sc-media a.icon:hover .fa
+  color: green
+  transition: ease-in .8s
