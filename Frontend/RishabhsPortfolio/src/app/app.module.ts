@@ -26,7 +26,8 @@ import { CertiComponent } from './component/certifications/certi.component';
 import { ProfSmComponent } from './component/prof-sm/prof-sm.component';
 import { SkillBarComponent } from './component/skill-bar/skill-bar/skill-bar.component';
 import { ReactiveFormsModule } from '@angular/forms';
-
+import { CodeAssesmentBarComponent } from './component/code-assesment-bar/code-assesment-bar.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -51,8 +52,14 @@ import { ReactiveFormsModule } from '@angular/forms';
     CertiComponent,
     ProfSmComponent,
     SkillBarComponent,
+    CodeAssesmentBarComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule,ReactiveFormsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+  ],
   providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
   bootstrap: [AppComponent],
 })
