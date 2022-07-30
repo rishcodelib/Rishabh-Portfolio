@@ -28,6 +28,8 @@ import { SkillBarComponent } from './component/skill-bar/skill-bar/skill-bar.com
 import { ReactiveFormsModule } from '@angular/forms';
 import { CodeAssesmentBarComponent } from './component/code-assesment-bar/code-assesment-bar.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ResumeComponent } from './component/resume/resume.component';
+import { ResumePageComponent } from './pages/resume-page/resume-page.component';
 
 
 @NgModule({
@@ -54,7 +56,9 @@ import { HttpClientModule } from '@angular/common/http';
     CertiComponent,
     ProfSmComponent,
     SkillBarComponent,
-    CodeAssesmentBarComponent
+    CodeAssesmentBarComponent,
+    ResumeComponent,
+    ResumePageComponent
    
   ],
   imports: [

@@ -4,6 +4,7 @@ import { AboutPageComponent } from './pages/about-page/about-page.component';
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ProjectPageComponent } from './pages/project-page/project-page.component';
+import { ResumePageComponent } from './pages/resume-page/resume-page.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: 'contact',
     component: ContactPageComponent,
+  },
+  {
+    path: 'resume',
+    component: ResumePageComponent,
   },
 ];
 @NgModule({
