@@ -11,6 +11,7 @@ const {
 
 const router = express.Router()
 
+router.param('userId', getUserById)
 // Routes
 router.route('/user').get(getAllUsers).post(createUser)
 

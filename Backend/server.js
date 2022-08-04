@@ -1,20 +1,10 @@
 const express = require('express')
 const app = express();
 
+require('dotenv').config()
 
-// const userRouter = require('./routes/userRoutes')
-// const db = require('dotenv')
-// const { connectMongoDB } = require('./config/mongodb')
-const SERVER_PORT = 3000
+const SERVER_PORT = process.env.SERVER_PORT
 
-// Connecting to Mongo DB
-// const mongoose = require('mongoose')
-
-// main().catch(e => console.log(e))
-
-// async function main() {
-//   await mongoose.connect('mongodb://localhost:27017/RishabhPortfolio')
-// }
 
 //Built-in middleware
 app.use(express.json())
@@ -31,7 +21,7 @@ app.use((req, res, next) => {
 
 //Handle Requests
 app.get('/', (req, res) => {
-  res.send("Rishabh Aggarwal..!")
+  res.send("Server is running on port ..!" + process.env.SERVER_PORT + " by " + process.env.USER_NAME)
 })
 
 app.get("/api/user", (req, res) => { res.send("geting all users") })
