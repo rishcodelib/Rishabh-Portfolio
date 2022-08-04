@@ -33,8 +33,7 @@ export class AllProjectsService {
       liveUrl: null,
       gitUrl: 'https://github.com/cdacgroup16/streameo',
       demoUrl: null,
-      imgSrc:
-        'https://www.rishabh-aggarwal.com/assets/project_logos/streameo.png',
+      imgSrc:'../assets/images/no_image.png',
       tag: ['MongoDB', 'ExpressJS', 'Angular', 'NodeJS'],
     },
     {
@@ -47,7 +46,7 @@ export class AllProjectsService {
       gitUrl: null,
       demoUrl: null,
       imgSrc:
-        'https://www.rishabh-aggarwal.com/assets/project_logos/ShreeTrends.png',
+      '../assets/images/no_image.png',
       tag: ['HTML', 'CSS3', 'PHP', 'MySQL', 'Jquery', 'Javascript'],
     },
     {
@@ -59,7 +58,7 @@ export class AllProjectsService {
       gitUrl: null,
       demoUrl: null,
       imgSrc:
-        'https://www.rishabh-aggarwal.com/assets/project_logos/travel_routes.png',
+      '../assets/images/no_image.png',
       tag: ['Wordpress', 'Elementor by WP'],
     },
     {
