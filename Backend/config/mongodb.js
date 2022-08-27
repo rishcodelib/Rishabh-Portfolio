@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 const connectMongoDB = async () => {
   await mongoose.
-    connect('mongodb+srv://rishabh:JF07liDTCXxczy16@rishabhaggarwal.5lq46hz.mongodb.net/sample?retryWrites=true&w=majority',
+    connect(process.env.MONGODB_URI,
       {
         useNewUrlParser: true,
         useFindAndModify: false,
@@ -11,9 +11,6 @@ const connectMongoDB = async () => {
       })
       console.log("DB Connection SUCCESS")
       .catch(err => console.log(err))
-
-
-
 
 module.exports = { connectMongoDB }
 }

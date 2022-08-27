@@ -38,7 +38,7 @@ async function run() {
 
   mongoose.model('User', userSchema);
 
-  await mongoose.connect('mongodb+srv://rishabh:JF07liDTCXxczy16@rishabhaggarwal.5lq46hz.mongodb.net/sample?retryWrites=true&w=majority');
+  await mongoose.connect(process.env.MONGODB_URI);
   await conn.model('User').findOne();
 }
 run();
