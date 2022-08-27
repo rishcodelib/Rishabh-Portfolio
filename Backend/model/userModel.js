@@ -35,11 +35,10 @@ const userSchema = new mongoose.Schema(
 async function run() {
   const conn = await mongoose.createConnection()
   conn.model('User', userSchema)
-
   mongoose.model('User', userSchema);
-
+  // await connectMongoDB
   await mongoose.connect(process.env.MONGODB_URI);
-  // await conn.model('User').findOne();
+//  
 }
 run();
 

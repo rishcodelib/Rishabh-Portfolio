@@ -14,12 +14,12 @@ exports.createUser = asyncHandler(async (req, res) => {
     lastName, email, password
     , contact
   })
-  console.log("Here i am");
-
+  console.log("User is Created");
+  res.send("User Added Success")
 
 })
 
-exports.getAllUsers =  asyncHandler(async (_req, res) => {
+exports.getAllUsers = asyncHandler(async (_req, res) => {
   User.find()
   console.log("Get All Users Method");
   console.log(User)
