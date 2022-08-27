@@ -39,7 +39,7 @@ async function run() {
   mongoose.model('User', userSchema);
 
   await mongoose.connect(process.env.MONGODB_URI);
-  await conn.model('User').findOne();
+  // await conn.model('User').findOne();
 }
 run();
 
