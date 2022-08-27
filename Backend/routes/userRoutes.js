@@ -9,9 +9,10 @@ const router = express.Router()
 // router.param('userId', getUserById)
 
 // Routes
-router.route('/')
+router.route('/user')
   .post(createUser)
   .get(getAllUsers)
+
 
 // router.route('/:userId').get(getUser).put(updateUserById)
 
