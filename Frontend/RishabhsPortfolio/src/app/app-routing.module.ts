@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { SigninComponent } from './component/signin/signin.component';
+import { SignupComponent } from './component/signup/signup.component';
 import { AboutPageComponent } from './pages/about-page/about-page.component';
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
@@ -31,6 +33,18 @@ const routes: Routes = [
   {
     path: 'resume',
     component: ResumePageComponent,
+  },
+  {
+    path: 'signin',
+    component: SigninComponent,
+  },
+  {
+    path: 'login',
+    redirectTo: '/signin',
+  },
+  {
+    path: 'signup',
+    component: SignupComponent,
   },
 ];
 @NgModule({
