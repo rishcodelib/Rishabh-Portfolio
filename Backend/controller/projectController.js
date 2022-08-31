@@ -2,12 +2,12 @@ const asyncHandler = require('express-async-handler')
 const Project = require('../model/projectModel')
 
 exports.createProject = asyncHandler(async (req, res) => {
-  let { projectName, shortName, category } = req.body
+  let { projectName, shortName, category, status } = req.body
   console.log(`Project Data Recieved: ${projectName}  ${shortName} ${category}  `)
 
   const prj = await Project.create({
     projectName,
-    shortName, category
+    shortName, category, status
   })
 
   res.send("Project Added Success")
