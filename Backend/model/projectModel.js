@@ -54,5 +54,13 @@ const projectSchema = new mongoose.Schema(
   { timestamps: true }
 
 )
+async function run() {
+  const conn = await mongoose.createConnection()
+  conn.model('Project', projectSchema)
+  mongoose.model('Project', projectSchema);
+  await mongoose.connect(process.env.MONGODB_URI);
+  //  
+}
+run();
 
 module.exports = mongoose.model('Project', projectSchema)

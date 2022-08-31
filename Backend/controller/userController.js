@@ -1,8 +1,6 @@
 const User = require('../model/userModel')
 const asyncHandler = require('express-async-handler')
 
-
-
 exports.createUser = asyncHandler(async (req, res) => {
   let { firstName, lastName, email, password, contact } = req.body
   firstName = firstName && firstName.toLowerCase()
@@ -24,5 +22,7 @@ exports.getAllUsers = asyncHandler(async (_req, res) => {
   })
 
 })
+
+
 
 

@@ -6,7 +6,7 @@ const userSchema = new mongoose.Schema(
       type: String,
       maxlength: 50,
       trim: true,
-      required: true
+      // required: true
     },
     lastName: {
       type: String,
@@ -16,7 +16,7 @@ const userSchema = new mongoose.Schema(
     email: {
       type: String,
       trim: true,
-      unique: true,
+      // unique: true,
       // required: true
     },
     password: {
@@ -36,9 +36,8 @@ async function run() {
   const conn = await mongoose.createConnection()
   conn.model('User', userSchema)
   mongoose.model('User', userSchema);
-  // await connectMongoDB
   await mongoose.connect(process.env.MONGODB_URI);
-//  
+  //  
 }
 run();
 
