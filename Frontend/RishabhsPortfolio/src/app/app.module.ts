@@ -30,6 +30,7 @@ import { CodeAssesmentBarComponent } from './component/code-assesment-bar/code-a
 import { HttpClientModule } from '@angular/common/http';
 import { ResumeComponent } from './component/resume/resume.component';
 import { ResumePageComponent } from './pages/resume-page/resume-page.component';
+import { DashbordPageComponent } from './pages/dashboard/dashbord-page/dashbord-page.component';
 
 
 @NgModule({
@@ -58,7 +59,8 @@ import { ResumePageComponent } from './pages/resume-page/resume-page.component';
     SkillBarComponent,
     CodeAssesmentBarComponent,
     ResumeComponent,
-    ResumePageComponent
+    ResumePageComponent,
+    DashbordPageComponent
    
   ],
   imports: [
