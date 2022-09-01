@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-signin',
@@ -7,6 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SigninComponent implements OnInit {
   classChange: any;
+  signinForm = new FormGroup({
+    userName: new FormControl(''),
+    password: new FormControl(''),
+  });
+  onSubmit() {
+    // TODO: Use EventEmitter with form value
+    console.warn(this.signinForm.value);
+    console.log(this.signinForm);
+  }
 
   constructor() {}
 

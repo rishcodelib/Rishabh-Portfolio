@@ -1,35 +1,41 @@
 <app-navbar></app-navbar>
-<!-- <hr> -->
+
 <app-heroimage></app-heroimage>
 <div class="container mt-5 pt-5">
   <div class="row">
     <div class="col-md-12 ">
-      <h3 class="text-center">Signup Form</h3>
-      <div class="row">
-        <div class="col-md-6">
-          Lets Login
-        </div>
-        <div class="col-md-6 text-left">
-          <form>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-        </div>
-      </div>
+      <h3 class="text-center">Signin Form</h3>
     </div>
   </div>
+  <div class="row">
+    <div class="col-md-4 left-part">
+      <div class="form-heading">
+        <h5>
+          Login Form
+
+        </h5>
+        <h6 class="sub-heading"> Thanks for bring a part of my online community!!!. </h6>
+        <p class="form-desc">
+          Please enter your credentials here and get to know about our latest creations / activities and much more. . .
+        </p>
+      </div>
+    </div>
+    <div class="col-md-8 text-left">
+      <form [formGroup]="signinForm" (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"> Username </label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            formControlName="userName">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" formControlName="password">
+        </div>
+        <button type="submit" class="btn btn-secondary">Submit</button>
+      </form>
+    </div>
+  </div>
+
 </div>
 <hr>
 <app-footer></app-footer>
