@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DashAllServicesComponent } from './component/dash-all-services/dash-all-services.component';
 import { SigninComponent } from './component/signin/signin.component';
 import { SignupComponent } from './component/signup/signup.component';
+import { UsersComponent } from './component/users/users.component';
 import { AboutPageComponent } from './pages/about-page/about-page.component';
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
@@ -46,6 +48,14 @@ const routes: Routes = [
     path: 'signup',
     component: SignupComponent,
   },
+  {
+    path: 'dashboard',
+    component: DashAllServicesComponent,
+  },
+  {
+    path: 'users',
+    component: UsersComponent,
+  }
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

@@ -11,11 +11,6 @@ const SERVER_PORT = process.env.SERVER_PORT
 //Connect to Database
 connectMongoDB
 
-//Built-in middleware
-app.use(express.json())
-app.use(express.urlencoded({ extended: false }))
-app.use(userRoutes,projectRoutes)
-
 //CORS policy
 app.use((_req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*')
@@ -23,6 +18,13 @@ app.use((_req, res, next) => {
   res.header('Access-Control-Allow-Headers', '*')
   next()
 })
+
+// 
+app.use(express.json())
+app.use(express.urlencoded({ extended: false }))
+app.use(userRoutes, projectRoutes)
+
+
 
 //Handle Requests
 app.get('/', (_req, res) => {

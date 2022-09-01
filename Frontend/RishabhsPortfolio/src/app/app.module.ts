@@ -30,7 +30,8 @@ import { CodeAssesmentBarComponent } from './component/code-assesment-bar/code-a
 import { HttpClientModule } from '@angular/common/http';
 import { ResumeComponent } from './component/resume/resume.component';
 import { ResumePageComponent } from './pages/resume-page/resume-page.component';
-import { DashbordPageComponent } from './pages/dashboard/dashbord-page/dashbord-page.component';
+import { DashAllServicesComponent } from './component/dash-all-services/dash-all-services.component';
+import { UsersComponent } from './component/users/users.component';
 
 
 @NgModule({
@@ -60,7 +61,8 @@ import { DashbordPageComponent } from './pages/dashboard/dashbord-page/dashbord-
     CodeAssesmentBarComponent,
     ResumeComponent,
     ResumePageComponent,
-    DashbordPageComponent
+    DashAllServicesComponent,
+    UsersComponent,
    
   ],
   imports: [
