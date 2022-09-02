@@ -1,12 +1,11 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-12">Table of Contents</div>
-  </div>
-  <div class="row">
     <div class="col-md-12">
-
-      <h2>Hover Rows</h2>
-      <p>The .table-hover class enables a hover state (grey background on mouse over) on table rows:</p>
+      <h2>All Registered Users</h2>
+      <p>All list of registered users are listed here as per the database:</p>
+      <div class="row">
+        <div class="offset-col-md-4 text-end"><button class="btn btn-success btn-sm"> Add New Project</button></div>
+      </div>
       <table class="table table-hover">
         <thead>
           <tr>
@@ -17,10 +16,10 @@
             <th>Password</th>
             <th>contact</th>
             <th>updated at</th>
+            <th>Modify</th>
           </tr>
         </thead>
         <tbody>
-
           <tr *ngFor="let item of userList">
             <td>{{item.createdAt}}</td>
             <td>{{item.firstName}}</td>
@@ -29,14 +28,13 @@
             <td>{{item.password}}</td>
             <td>{{item.contact}}</td>
             <td>{{item.updatedAt}}</td>
-
+            <td>
+              <button class="btn-sm btn btn-warning mb-1">EDIT</button>
+              <button class="btn-sm btn btn-danger mb-1">DELETE</button>
+            </td>
           </tr>
-
         </tbody>
       </table>
-
-
-
     </div>
   </div>
 </div>

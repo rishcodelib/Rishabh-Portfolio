@@ -1,9 +1,13 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root',
 })
 export class AllProjectsService {
+  uri = environment.backendApi + '/project';
+
   project: any = [
     {
       key: 1,
@@ -33,7 +37,7 @@ export class AllProjectsService {
       liveUrl: null,
       gitUrl: 'https://github.com/cdacgroup16/streameo',
       demoUrl: null,
-      imgSrc:'../assets/images/no_image.png',
+      imgSrc: '../assets/images/no_image.png',
       tag: ['MongoDB', 'ExpressJS', 'Angular', 'NodeJS'],
     },
     {
@@ -45,8 +49,7 @@ export class AllProjectsService {
       liveUrl: 'https://www.shreetrends.in/',
       gitUrl: null,
       demoUrl: null,
-      imgSrc:
-      '../assets/images/no_image.png',
+      imgSrc: '../assets/images/no_image.png',
       tag: ['HTML', 'CSS3', 'PHP', 'MySQL', 'Jquery', 'Javascript'],
     },
     {
@@ -57,8 +60,7 @@ export class AllProjectsService {
       liveUrl: 'https://www.travelRoutes.in/',
       gitUrl: null,
       demoUrl: null,
-      imgSrc:
-      '../assets/images/no_image.png',
+      imgSrc: '../assets/images/no_image.png',
       tag: ['Wordpress', 'Elementor by WP'],
     },
     {
@@ -95,5 +97,9 @@ export class AllProjectsService {
       tag: ['HTML', 'CSS', 'Bootstrap', 'Javascript'],
     },
   ];
-  constructor() {}
+  constructor(private http: HttpClient) {}
+
+  getAllProjects() {
+    return this.http.get(this.uri);
+  }
 }

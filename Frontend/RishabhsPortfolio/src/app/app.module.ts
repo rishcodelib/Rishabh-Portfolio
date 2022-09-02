@@ -32,6 +32,7 @@ import { ResumeComponent } from './component/resume/resume.component';
 import { ResumePageComponent } from './pages/resume-page/resume-page.component';
 import { DashAllServicesComponent } from './component/dash-all-services/dash-all-services.component';
 import { UsersComponent } from './component/users/users.component';
+import { ProjectVWComponent } from './component/project-vw/project-vw.component';
 
 
 @NgModule({
@@ -63,6 +64,7 @@ import { UsersComponent } from './component/users/users.component';
     ResumePageComponent,
     DashAllServicesComponent,
     UsersComponent,
+    ProjectVWComponent,
    
   ],
   imports: [

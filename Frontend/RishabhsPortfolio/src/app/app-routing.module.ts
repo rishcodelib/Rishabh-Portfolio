@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashAllServicesComponent } from './component/dash-all-services/dash-all-services.component';
+import { ProjectVWComponent } from './component/project-vw/project-vw.component';
 import { SigninComponent } from './component/signin/signin.component';
 import { SignupComponent } from './component/signup/signup.component';
 import { UsersComponent } from './component/users/users.component';
@@ -55,7 +56,11 @@ const routes: Routes = [
   {
     path: 'users',
     component: UsersComponent,
-  }
+  },
+  {
+    path: 'projects',
+    component: ProjectVWComponent,
+  },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

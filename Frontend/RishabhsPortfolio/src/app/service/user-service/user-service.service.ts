@@ -7,7 +7,6 @@ import { environment } from 'src/environments/environment';
 })
 export class UserServiceService {
   uri = environment.backendApi + '/user';
-  // uri = 'localhost:3000/user';
 
   constructor(private http: HttpClient) {}
 
