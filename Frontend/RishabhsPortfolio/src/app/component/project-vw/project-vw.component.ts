@@ -16,4 +16,7 @@ export class ProjectVWComponent implements OnInit {
       this.prjList = res;
     });
   }
+  addNewProject() {
+    window.location.href = 'add-project';
+  }
 }

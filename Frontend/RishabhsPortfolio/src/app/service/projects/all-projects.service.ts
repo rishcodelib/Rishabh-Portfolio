@@ -102,4 +102,8 @@ export class AllProjectsService {
   getAllProjects() {
     return this.http.get(this.uri);
   }
+
+  createProject(pjt: any) {
+    return this.http.post(this.uri, pjt);
+  }
 }

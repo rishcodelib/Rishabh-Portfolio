@@ -33,6 +33,8 @@ import { ResumePageComponent } from './pages/resume-page/resume-page.component';
 import { DashAllServicesComponent } from './component/dash-all-services/dash-all-services.component';
 import { UsersComponent } from './component/users/users.component';
 import { ProjectVWComponent } from './component/project-vw/project-vw.component';
+import { NewProjectComponent } from './component/new-project/new-project.component';
+import { BsAlertComponent } from './component/bs-alert/bs-alert.component';
 
 
 @NgModule({
@@ -65,6 +67,8 @@ import { ProjectVWComponent } from './component/project-vw/project-vw.component'
     DashAllServicesComponent,
     UsersComponent,
     ProjectVWComponent,
+    NewProjectComponent,
+    BsAlertComponent,
    
   ],
   imports: [

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashAllServicesComponent } from './component/dash-all-services/dash-all-services.component';
+import { NewProjectComponent } from './component/new-project/new-project.component';
 import { ProjectVWComponent } from './component/project-vw/project-vw.component';
 import { SigninComponent } from './component/signin/signin.component';
 import { SignupComponent } from './component/signup/signup.component';
@@ -60,6 +61,10 @@ const routes: Routes = [
   {
     path: 'projects',
     component: ProjectVWComponent,
+  },
+  {
+    path: 'add-project',
+    component: NewProjectComponent,
   },
 ];
 @NgModule({
