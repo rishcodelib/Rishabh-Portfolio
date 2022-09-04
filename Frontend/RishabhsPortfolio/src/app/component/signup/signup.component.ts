@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+import { User } from 'src/app/entity/User/user';
+import { UserServiceService } from 'src/app/service/user-service/user-service.service';
 
 @Component({
   selector: 'app-signup',
@@ -14,11 +16,22 @@ export class SignupComponent implements OnInit {
     password: new FormControl(''),
     contact: new FormControl(''),
   });
-  onSubmit() {
-    console.log(this.signupForm);
-  }
-  constructor() {}
 
+  constructor(private uServe: UserServiceService) {}
   ngOnInit(): void {}
+
+  user!: User;
+  onSubmit() {
+    this.user = this.signupForm.value;
+    console.log(this.user);
+    this.uServe.createUser(this.user).subscribe(
+      (res) => {
+        console.log(res);
+      },
+      (err) => {
+        console.log(err.message);
+      }
+    );
+    // window.location.href='/users'
+  }
 }
-// formControlName="firstName"
