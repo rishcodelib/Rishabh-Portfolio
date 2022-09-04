@@ -6,11 +6,11 @@ const projectSchema = new mongoose.Schema(
       type: String,
       maxlength: 50,
       trim: true,
-      required: true
+      // required: true
     },
     shortName: {
       type: String,
-      maxlength: 10,
+      maxlength: 6,
       trim: true
     },
     category: {
@@ -20,9 +20,6 @@ const projectSchema = new mongoose.Schema(
     description: {
       type: String,
       trim: true
-    },
-    date: {
-      type: Date
     },
     techStack: [{
       type: String,
@@ -48,6 +45,12 @@ const projectSchema = new mongoose.Schema(
     },
     status: {
       enum: ['inprogress', 'completed', 'planned']
+    },
+    key: {
+      type: String
+    },
+    imgSrc: {
+      type: String
     }
 
   },

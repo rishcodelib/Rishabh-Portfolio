@@ -1,5 +1,5 @@
 const express = require('express')
-const { getAllProjects, createProject } = require('../controller/projectController')
+const { getAllProjects, createProject, deleteProjectById } = require('../controller/projectController')
 
 
 
@@ -11,6 +11,9 @@ const router = express.Router()
 router.route('/project')
   .post(createProject)
   .get(getAllProjects)
+
+router.route('/project/:id')
+  .delete(deleteProjectById)
 
 
 // router.route('/:userId').get(getUser).put(updateUserById)
