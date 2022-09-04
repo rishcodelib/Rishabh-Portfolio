@@ -37,9 +37,10 @@
             <td>{{item.url}}</td>
             <td>{{item.version}}</td>
             <td>{{item.status.enum}}</td>
+            <td>{{item._id}}</td>
             <td>
               <button class="btn-sm btn btn-warning mb-1">EDIT</button>
-              <button class="btn-sm btn btn-danger mb-1">DELETE</button>
+              <button class="btn-sm btn btn-danger mb-1" (click)="onDelete(item._id)">DELETE</button>
             </td>
           </tr>
         </tbody>

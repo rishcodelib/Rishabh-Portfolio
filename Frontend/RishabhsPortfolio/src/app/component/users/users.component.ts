@@ -15,4 +15,7 @@ export class UsersComponent implements OnInit {
       this.userList = res;
     });
   }
+  newUser() {
+    console.log('Clicked');
+  }
 }

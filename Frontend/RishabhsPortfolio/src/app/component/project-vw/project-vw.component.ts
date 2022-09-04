@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Project } from 'src/app/entity/project/project';
 import { AllProjectsService } from 'src/app/service/projects/all-projects.service';
 
 @Component({
@@ -18,5 +19,9 @@ export class ProjectVWComponent implements OnInit {
   }
   addNewProject() {
     window.location.href = 'add-project';
+  }
+  onDelete(id: any): void {
+    console.log('Req Recievd in Com to delete id = ' + id);
+    this.projServe.deleteProject(id);
   }
 }

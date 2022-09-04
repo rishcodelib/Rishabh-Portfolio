@@ -106,4 +106,17 @@ export class AllProjectsService {
   createProject(pjt: any) {
     return this.http.post(this.uri, pjt);
   }
+  deleteProject(id: any) {
+    console.log(`Project Service hit with ${this.uri}/${id} ` );
+
+    return this.http.delete(this.uri, id).subscribe(
+      (res) => {
+        console.log(res);
+      },
+      (err) => {
+        console.error(`error by service is ${err}`);
+        console.log(err);
+      }
+    );
+  }
 }

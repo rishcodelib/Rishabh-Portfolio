@@ -1,25 +1,40 @@
 export class Project {
-  id: number;
-  name: string;
-  description: string;
-  gitUrl: string;
-  liveUrl: string;
-  tag: any;
+  projectName: String;
+  shortName: String;
+  description: String;
+  category: String;
+  techStack: String;
+  demo: String;
+  git: String;
+  live: String;
+  version: Number;
+  status: any;
+  key: String;
 
   constructor(
-    id: number,
-    name: string,
+    version: number,
+    projectName: string,
+    shortName: string,
     description: string,
-    gitUrl: string,
-    liveUrl: string,
-    tag: any
+    category: string,
+    techStack: string,
+    demo: string,
+    git: string,
+    live: string,
+    status: any,
+    key: any
   ) {
-    this.id = id;
-    this.name = name;
+    this.version = version;
+    this.projectName = projectName;
+    this.shortName = shortName;
     this.description = description;
-    this.gitUrl = gitUrl;
-    this.liveUrl = liveUrl;
-    this.tag = tag;
+    this.category = category;
+    this.techStack = techStack;
+    this.demo = demo;
+    this.git = git;
+    this.live = live;
+    this.status = status;
+    this.key = key;
   }
-  
 }
+

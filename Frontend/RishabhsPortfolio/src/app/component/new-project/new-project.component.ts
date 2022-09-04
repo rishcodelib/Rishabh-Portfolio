@@ -45,5 +45,6 @@ export class NewProjectComponent implements OnInit {
         }
       }
     );
+    window.location.href = '/projects';
   }
 }
