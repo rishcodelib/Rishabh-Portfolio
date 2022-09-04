@@ -8,6 +8,8 @@ import { AllProjectsService } from 'src/app/service/projects/all-projects.servic
   styleUrls: ['./project-card.component.sass'],
 })
 export class ProjectCardComponent implements OnInit {
+  prjList: any;
+
   public src: any;
   public title: any;
   public desc: any;
@@ -25,6 +27,7 @@ export class ProjectCardComponent implements OnInit {
       this.git = myproj.gitUrl;
       this.tag = myproj.tag;
     });
-    console.log(mp);
+
+    // console.log(mp);
   }
 }

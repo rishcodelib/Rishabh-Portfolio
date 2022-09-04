@@ -10,6 +10,7 @@ export class Project {
   version: Number;
   status: any;
   key: String;
+  imgSrc: String;
 
   constructor(
     version: number,
@@ -22,7 +23,8 @@ export class Project {
     git: string,
     live: string,
     status: any,
-    key: any
+    key: any,
+    imgSrc: String
   ) {
     this.version = version;
     this.projectName = projectName;
@@ -35,6 +37,6 @@ export class Project {
     this.live = live;
     this.status = status;
     this.key = key;
+    this.imgSrc = imgSrc;
   }
 }
-

@@ -14,7 +14,15 @@ export class UserServiceService {
   getAllUsers() {
     return this.http.get(this.uri);
   }
+
   createUser(user: User) {
     return this.http.post(this.uri, user);
+  }
+
+  signIn(user: User) {
+    return this.http.post(this.uri, {
+      email: user.email,
+      password: user.password,
+    });
   }
 }
