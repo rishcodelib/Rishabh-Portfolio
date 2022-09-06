@@ -14,7 +14,7 @@ RUN NPM install
 # RUN npm ci --only=production
 
 COPY . .
-
+#Expose port
 EXPOSE 8080
 
 CMD [ "node",'server.js' ]
