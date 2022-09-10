@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { environment } from 'src/environments/environment';
 import { DashAllServicesComponent } from './component/dash-all-services/dash-all-services.component';
 import { NewProjectComponent } from './component/new-project/new-project.component';
 import { ProjectVWComponent } from './component/project-vw/project-vw.component';
@@ -13,11 +14,6 @@ import { ProjectPageComponent } from './pages/project-page/project-page.componen
 import { ResumePageComponent } from './pages/resume-page/resume-page.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    pathMatch: 'full',
-    redirectTo: '/home',
-  },
   {
     path: 'home',
     component: HomePageComponent,
