@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { environment } from 'src/environments/environment';
 import { DashAllServicesComponent } from './component/dash-all-services/dash-all-services.component';
 import { NewProjectComponent } from './component/new-project/new-project.component';
+import { ProjectInfoComponent } from './component/project-info/project-info/project-info.component';
 import { ProjectVWComponent } from './component/project-vw/project-vw.component';
 import { SigninComponent } from './component/signin/signin.component';
 import { SignupComponent } from './component/signup/signup.component';
@@ -14,6 +15,10 @@ import { ProjectPageComponent } from './pages/project-page/project-page.componen
 import { ResumePageComponent } from './pages/resume-page/resume-page.component';
 
 const routes: Routes = [
+  {
+    path: '',
+    component: HomePageComponent,
+  },
   {
     path: 'home',
     component: HomePageComponent,
@@ -30,38 +35,42 @@ const routes: Routes = [
     path: 'contact',
     component: ContactPageComponent,
   },
-  // {
-  //   path: 'resume',
-  //   component: ResumePageComponent,
-  // },
-  // {
-  //   path: 'signin',
-  //   component: SigninComponent,
-  // },
-  // {
-  //   path: 'login',
-  //   redirectTo: '/signin',
-  // },
-  // {
-  //   path: 'signup',
-  //   component: SignupComponent,
-  // },
-  // {
-  //   path: 'dashboard',
-  //   component: DashAllServicesComponent,
-  // },
-  // {
-  //   path: 'users',
-  //   component: UsersComponent,
-  // },
-  // {
-  //   path: 'projects',
-  //   component: ProjectVWComponent,
-  // },
-  // {
-  //   path: 'add-project',
-  //   component: NewProjectComponent,
-  // },
+  {
+    path: 'resume',
+    component: ResumePageComponent,
+  },
+  {
+    path: 'signin',
+    component: SigninComponent,
+  },
+  {
+    path: 'login',
+    redirectTo: '/signin',
+  },
+  {
+    path: 'signup',
+    component: SignupComponent,
+  },
+  {
+    path: 'dashboard',
+    component: DashAllServicesComponent,
+  },
+  {
+    path: 'users',
+    component: UsersComponent,
+  },
+  {
+    path: 'projects',
+    component: ProjectVWComponent,
+  },
+  {
+    path: 'add-project',
+    component: NewProjectComponent,
+  },
+  {
+    path: 'project-info',
+    component: ProjectInfoComponent,
+  },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

@@ -34,6 +34,10 @@ export class NavbarComponent implements OnInit {
         this.classChange = 'bg-light navbar-light ';
         break;
       }
+      case 'project-info': {
+        this.classChange = 'bg-light navbar-light ';
+        break;
+      }
       default: {
         this.classChange = 'bg-transparent navbar-dark  fixed-top ';
         break;

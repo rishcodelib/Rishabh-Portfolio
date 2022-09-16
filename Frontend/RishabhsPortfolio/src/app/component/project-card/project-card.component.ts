@@ -28,6 +28,6 @@ export class ProjectCardComponent implements OnInit {
       this.tag = myproj.tag;
     });
 
-    // console.log(mp);
+    console.log(mp);
   }
 }

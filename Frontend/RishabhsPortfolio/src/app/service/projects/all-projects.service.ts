@@ -97,17 +97,22 @@ export class AllProjectsService {
       tag: ['HTML', 'CSS', 'Bootstrap', 'Javascript'],
     },
   ];
+  payload: string | undefined;
   constructor(private http: HttpClient) {}
 
   getAllProjects() {
     return this.http.get(this.uri);
+  }
+  getProject(key: any) {
+    this.payload = this.uri + '/' + key;
+    return this.http.get(this.payload);
   }
 
   createProject(pjt: any) {
     return this.http.post(this.uri, pjt);
   }
   deleteProject(id: any) {
-    console.log(`Project Service hit with ${this.uri}/${id} ` );
+    console.log(`Project Service hit with ${this.uri}/${id} `);
 
     return this.http.delete(this.uri, id).subscribe(
       (res) => {
