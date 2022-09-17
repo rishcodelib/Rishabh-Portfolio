@@ -19,6 +19,11 @@ export class UserServiceService {
     return this.http.post(this.uri, user);
   }
 
+  getUser(id: String) {
+    const payload = this.uri + '/' + id;
+    return this.http.get(payload);
+  }
+
   signIn(user: User) {
     return this.http.post(this.uri, {
       email: user.email,
