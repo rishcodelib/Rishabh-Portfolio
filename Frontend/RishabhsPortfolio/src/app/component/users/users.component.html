@@ -30,7 +30,7 @@
             <td>{{item.contact}}</td>
             <td>{{item.updatedAt}}</td>
             <td>
-              <button class="btn-sm btn btn-warning mb-1 w-100">EDIT</button>
+              <button class="btn-sm btn btn-warning mb-1 w-100" (click)="editUser(item._id)">EDIT</button>
               <button class="btn-sm btn btn-danger mb-1 w-100">DELETE</button>
             </td>
           </tr>

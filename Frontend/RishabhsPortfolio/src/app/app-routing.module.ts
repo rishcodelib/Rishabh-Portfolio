@@ -7,6 +7,7 @@ import { ProjectInfoComponent } from './component/project-info/project-info/proj
 import { ProjectVWComponent } from './component/project-vw/project-vw.component';
 import { SigninComponent } from './component/signin/signin.component';
 import { SignupComponent } from './component/signup/signup.component';
+import { UserInfoComponent } from './component/user-info/user-info.component';
 import { UsersComponent } from './component/users/users.component';
 import { AboutPageComponent } from './pages/about-page/about-page.component';
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
@@ -70,6 +71,10 @@ const routes: Routes = [
   {
     path: 'project-info',
     component: ProjectInfoComponent,
+  },
+  {
+    path: 'user-info',
+    component: UserInfoComponent,
   },
 ];
 @NgModule({

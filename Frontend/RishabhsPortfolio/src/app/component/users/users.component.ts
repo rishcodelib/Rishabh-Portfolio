@@ -18,4 +18,9 @@ export class UsersComponent implements OnInit {
   newUser() {
     console.log('Clicked');
   }
+  editUser(_id: string) {
+    this.uservice.getUser(_id).subscribe((res) => {
+      console.log(res);
+    });
+  }
 }
