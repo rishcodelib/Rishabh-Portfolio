@@ -36,46 +36,46 @@ const routes: Routes = [
     path: 'contact',
     component: ContactPageComponent,
   },
-  {
-    path: 'resume',
-    component: ResumePageComponent,
-  },
-  {
-    path: 'signin',
-    component: SigninComponent,
-  },
-  {
-    path: 'login',
-    redirectTo: '/signin',
-  },
-  {
-    path: 'signup',
-    component: SignupComponent,
-  },
-  {
-    path: 'dashboard',
-    component: DashAllServicesComponent,
-  },
-  {
-    path: 'users',
-    component: UsersComponent,
-  },
-  {
-    path: 'projects',
-    component: ProjectVWComponent,
-  },
-  {
-    path: 'add-project',
-    component: NewProjectComponent,
-  },
-  {
-    path: 'project-info',
-    component: ProjectInfoComponent,
-  },
-  {
-    path: 'user-info',
-    component: UserInfoComponent,
-  },
+  // {
+  //   path: 'resume',
+  //   component: ResumePageComponent,
+  // },
+  // {
+  //   path: 'signin',
+  //   component: SigninComponent,
+  // },
+  // {
+  //   path: 'login',
+  //   redirectTo: '/signin',
+  // },
+  // {
+  //   path: 'signup',
+  //   component: SignupComponent,
+  // },
+  // {
+  //   path: 'dashboard',
+  //   component: DashAllServicesComponent,
+  // },
+  // {
+  //   path: 'users',
+  //   component: UsersComponent,
+  // },
+  // {
+  //   path: 'projects',
+  //   component: ProjectVWComponent,
+  // },
+  // {
+  //   path: 'add-project',
+  //   component: NewProjectComponent,
+  // },
+  // {
+  //   path: 'project-info',
+  //   component: ProjectInfoComponent,
+  // },
+  // {
+  //   path: 'user-info',
+  //   component: UserInfoComponent,
+  // },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
