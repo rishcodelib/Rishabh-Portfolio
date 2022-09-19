@@ -24,4 +24,8 @@ export class ProjectVWComponent implements OnInit {
     console.log('Req Recievd in Com to delete id = ' + id);
     this.projServe.deleteProject(id);
   }
+  onEdit(id: any): void {
+    console.log('Req Recievd in Com to delete id = ' + id);
+    this.projServe.deleteProject(id);
+  }
 }

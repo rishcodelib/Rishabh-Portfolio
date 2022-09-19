@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { GetFromUrlService } from 'src/app/service/getFromUrl/get-from-url.service';
 import { AllProjectsService } from 'src/app/service/projects/all-projects.service';
 
 @Component({
@@ -12,7 +13,8 @@ export class ProjectInfoComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private pserve: AllProjectsService,
-    public mp: AllProjectsService
+    public mp: AllProjectsService,
+    public getUrl: GetFromUrlService
   ) {}
   prjList: any;
 
@@ -24,9 +26,11 @@ export class ProjectInfoComponent implements OnInit {
   public tag: any;
   item: any;
   ngOnInit() {
+    
+
     this.route.queryParams.subscribe((res) => {
       this.id = res['key'];
-      console.log(this.id);
+      // console.log(this.id);
     });
     this.mp.getAllProjects().forEach((myproj: any) => {
       this.title = myproj.projectName;
