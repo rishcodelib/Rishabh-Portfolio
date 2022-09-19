@@ -38,17 +38,17 @@ exports.signIn = asyncHandler(async (req, res) => {
   })
 })
 
-exports.getUserById = async (req, res, next, _id) => {
+exports.getUserById = async (req, res) => {
   try {
-    const user = await User.findById(_id).populate('user')
+    console.log(`User with ID ${req.params.id} Found`)
+    const user = await User.findById(req.params.id)
+    res.json(user)
     if (!user) {
       res.status(400)
       throw new Error('User not found!')
     }
-    req.user = user
-    next()
   } catch (error) {
-    next(error)
+    res.json(`Error is : ${error.message}`)
   }
 }
 

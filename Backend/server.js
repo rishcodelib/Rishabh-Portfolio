@@ -1,9 +1,10 @@
 const express = require('express')
 const { Mongoose } = require('mongoose')
+require('dotenv').config()
 const { connectMongoDB } = require('./config/mongodb')
+const { getUserById } = require('./controller/userController')
 const userRoutes = require('./routes/userRoutes')
 const projectRoutes = require('./routes/projectRoutes')
-require('dotenv').config()
 
 const app = express()
 const SERVER_PORT = process.env.SERVER_PORT
@@ -30,6 +31,18 @@ app.use(userRoutes, projectRoutes)
 app.get('/', (_req, res) => {
   res.send("Server is running on port ..!" + process.env.SERVER_PORT + " by " + process.env.USER_NAME)
 })
+
+
+
+
+
+
+// routes will go here
+// ...
+
+// app.get('/api/users/:name', function (req, res) {
+//   res.send('Hello ' + req.name + '!');
+// })
 
 // app.get("/api/user", (_req, res) => { res.send("geting all users") })
 

@@ -2,6 +2,11 @@ const mongoose = require('mongoose');
 
 const projectSchema = new mongoose.Schema(
   {
+    key: {
+      type: Number,
+      autoIncrement: true,
+      default: 0
+    },
     projectName: {
       type: String,
       maxlength: 50,
