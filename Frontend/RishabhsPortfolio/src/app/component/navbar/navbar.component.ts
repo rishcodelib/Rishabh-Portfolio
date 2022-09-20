@@ -14,13 +14,6 @@ export class NavbarComponent implements OnInit {
     let url = window.location.href;
     this.page = url.split('/')[3];
 
-    // To Remove Nav Effects on Specific page
-    // if (this.page === 'resume') {
-    //   this.classChange = 'bg-light navbar-light ';
-    // } else if (this.page === 'users') {
-    //   this.classChange = 'bg-light navbar-light ';
-    // }
-
     switch (this.page) {
       case 'resume': {
         this.classChange = 'bg-light navbar-light ';
@@ -35,6 +28,10 @@ export class NavbarComponent implements OnInit {
         break;
       }
       case 'project-info': {
+        this.classChange = 'bg-light navbar-light ';
+        break;
+      }
+      case 'signin': {
         this.classChange = 'bg-light navbar-light ';
         break;
       }
