@@ -12,7 +12,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: cd Frontend/RishabhsPortfolio/
-      - name: Angular Build -- prod
       - run: ng build --prod
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
