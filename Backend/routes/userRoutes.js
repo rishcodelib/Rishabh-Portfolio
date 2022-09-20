@@ -14,6 +14,7 @@ router.route('/user')
   .post(createUser)
   .get(getAllUsers)
   .put(updateUserById)
+
 router.route('/signin')
   .post(signIn)
 
