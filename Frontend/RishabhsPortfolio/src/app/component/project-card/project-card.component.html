@@ -1,0 +1,55 @@
+<div class="jumbotron container mt-4">
+  <h1 class="display-5 text-center pt-3">Projects</h1>
+  <p class="lead text-center">
+    commodi, maiores quis aliquam consequuntur unde! Error et tenetur nulla repellendus nisi ad ea provident nemo
+  </p>
+</div>
+<hr class="my-6 ">
+
+<div class="project-card container">
+  <div class="row">
+    <!-- Loop Start -->
+    <div class="col-md-6 col-lg-4 col-xl-3 px-2" *ngFor="let project of mp.project">
+      <a href="/project-info/{{project.key}}" class="text-decoration-none text-black " >
+        <div class="card border-0 bg-proj-carousel">
+          <img class="card-img-top" src="{{project.imgSrc}}" alt="projectImage">
+          <div class="card-body">
+            <h5 class="card-title">{{project.projectName}}</h5>
+            <p class="card-text">{{project.description}}</p>
+            <span *ngFor="let item of project.tag">
+              <app-project-tag class="tag" [tag]="item"></app-project-tag>
+            </span>
+          </div>
+          <hr class="divider">
+          <div class="row">
+            <div *ngIf="project.liveUrl" class="col-md-4  ">
+              <a href="{{project.liveUrl}}" class="btn process-btn btn-live">LIVE</a>
+            </div>
+            <div *ngIf="project.demoUrl" class="col-md-4 text-center">
+              <a href="{{project.demoUrl}}" class="btn process-btn btn-demo">DEMO</a>
+            </div>
+            <div *ngIf="project.gitUrl" class="col-md-4 text-right ">
+              <a href="{{project.gitUrl}}" class="btn process-btn btn-git ">GITHUB</a>
+            </div>
+          </div>
+          <!-- </div>Card Body -->
+        </div>
+      </a>
+    </div>
+    <!-- Loop END -->
+  </div>
+</div>
+
+<!-- <nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item disabled"><a class="page-link" href="#">2</a></li>
+    <li class="page-item disabled"><a class="page-link" href="#">3</a></li>
+    <li class="page-item disabled">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav> -->

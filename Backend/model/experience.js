@@ -14,7 +14,7 @@ const experienceSchema = new mongoose.Schema(
     companyWebsite: {
       type: String,
     },
-    Location: {
+    location: {
       type: String,
     },
     projects: {
