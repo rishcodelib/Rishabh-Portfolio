@@ -11,7 +11,7 @@ import { UserServiceService } from 'src/app/service/user-service/user-service.se
 export class SigninComponent implements OnInit {
   user!: User;
   signinForm = new FormGroup({
-    userName: new FormControl(''),
+    email: new FormControl(''),
     password: new FormControl(''),
   });
 
@@ -19,16 +19,17 @@ export class SigninComponent implements OnInit {
 
   onSubmit() {
     // TODO: Use EventEmitter with form value
-    this.uServe.signIn(this.user).subscribe(
+    this.uServe.signIn(this.signinForm.value).subscribe(
       (res) => {
-        console.log(res);
+        // console.log(res);
+        let id = JSON.parse(JSON.stringify(res))._id;
+        localStorage.setItem('login', id);
       },
       (err) => {
         console.log(err.error);
+        localStorage.removeItem('login');
       }
     );
-    console.warn(this.signinForm.value);
-    console.log(this.signinForm);
   }
   ngOnInit(): void {}
 }

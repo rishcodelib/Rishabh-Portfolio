@@ -36,18 +36,18 @@ const routes: Routes = [
     path: 'contact',
     component: ContactPageComponent,
   },
-  // {
-  //   path: 'resume',
-  //   component: ResumePageComponent,
-  // },
-  // {
-  //   path: 'signin',
-  //   component: SigninComponent,
-  // },
-  // {
-  //   path: 'login',
-  //   redirectTo: '/signin',
-  // },
+  {
+    path: 'resume',
+    component: ResumePageComponent,
+  },
+  {
+    path: 'signin',
+    component: SigninComponent,
+  },
+  {
+    path: 'login',
+    redirectTo: '/signin',
+  }
   // {
   //   path: 'signup',
   //   component: SignupComponent,
