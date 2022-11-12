@@ -11,6 +11,7 @@ export class AllProjectsService {
   project: any = [
     {
       key: 1,
+      id: '6314b2586be526894adcaa50',
       projectName: 'Ecommerce-App',
       description:
         'A Complete E-Commerce solution for customers, vendors & distrubuters.',
@@ -21,6 +22,7 @@ export class AllProjectsService {
     },
     {
       key: 2,
+      id: '6314b3a06b629c689bf74a1f',
       projectName: 'Personal Portfolio',
       description: 'Lorem Ipsum Dolor Sit Description.. ',
       liveUrl: 'https://rishabh-aggarwal.com',
@@ -31,6 +33,7 @@ export class AllProjectsService {
     },
     {
       key: 3,
+      id: '6314b4686b629c689bf74a27',
       projectName: 'Streameo',
       description:
         'A Subscription based Video streaming website, with features of streaming a video into 3 different qualities, subscription plans and stream control',
@@ -54,6 +57,7 @@ export class AllProjectsService {
     },
     {
       key: 5,
+      id: '6314b56a6b629c689bf74a2d',
       projectName: 'The Travel Routes',
       alias: null,
       description: 'A Complete Travel web Application created on wordpress.',
@@ -76,6 +80,8 @@ export class AllProjectsService {
     },
     {
       key: 6,
+
+      id: '6314b7427be0bda93598bdf8',
       projectName: 'The Rashan Store',
       alias: null,
       description: 'A Multi Utility Online Grocercy Store.',
@@ -87,6 +93,7 @@ export class AllProjectsService {
     },
     {
       key: 6,
+      id: '6314b7427be0bda93598bdf8',
       projectName: 'Justified Code',
       alias: null,
       description: 'A landing page for company, bussinesses . . . ',
@@ -105,6 +112,7 @@ export class AllProjectsService {
   }
   getProject(key: any) {
     this.payload = this.uri + '/' + key;
+    console.log(this.payload);
     return this.http.get(this.payload);
   }
 

@@ -1,16 +1,13 @@
-<app-heroimage></app-heroimage>
-<div class="container mt-5 pt-5">
-  <div class="row">
+<!-- <app-heroimage></app-heroimage> -->
+<div class="container ">
+  <div class="row mt-1">
     <div class="col-md-12 ">
       <h3 class="text-center">Signin Form</h3>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-md-4 left-part">
+    <div class="col-md-8 left-part">
       <div class="form-heading">
         <h5>
           Login Form
-
         </h5>
         <h6 class="sub-heading"> Thanks for bring a part of my online community!!!. </h6>
         <p class="form-desc">
@@ -18,12 +15,12 @@
         </p>
       </div>
     </div>
-    <div class="col-md-8 text-left">
+    <div class="col-md-4 text-left">
       <form [formGroup]="signinForm" (ngSubmit)="onSubmit()">
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label"> Username </label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-            formControlName="userName">
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            formControlName="email">
         </div>
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">Password</label>

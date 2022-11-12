@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h4> {{products.projectName}} [{{products.shortName}}]</h4>
+      <p>{{products.createdAt}}</p>
+      <hr class="w-25 m-auto mb-3">
+    </div>
+    <div class="col-md-4">
+      <img src="./assets/images/no_image.png" class="img-thumbnail" alt="">
+    </div>
+    <div class="col-md-6">
+      <p>
+        {{products.description}}
+      </p>
+      <!-- <p>Category : {{products.category}}</p> -->
+      
+      <p>Tech Stack: <span *ngFor="let item of products.techStack">{{item}} </span>
+      </p>
+      <span *ngIf="products.url.live" class="col-md-4  ">
+        <a href="{{products.url.live}}" class="btn process-btn  btn-live mx-1">LIVE</a>
+      </span>
+      <span *ngIf="products.demoUrl" class="col-md-4 text-center">
+        <a href="{{products.demoUrl}}" class="btn process-btn  btn-demo mx-1">DEMO</a>
+      </span>
+      <span *ngIf="products.url.git" class="col-md-4 text-right ">
+        <a href="{{products.url.git}}" class="btn process-btn  btn-git mx-1 ">GITHUB</a>
+      </span>
+    </div>
+    <div class="col-md-2">
+      <p>
+        Version: {{products.version}}
+      </p>
+      <p>Status : {{products.status.enum}}</p>
+      <p class="display-6  "> {{products.category}}</p>
+
+    </div>
+
+    <app-code-assesment-bar></app-code-assesment-bar>
+  </div>
+
+</div>

@@ -3,14 +3,13 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.sass']
+  styleUrls: ['./app.component.sass'],
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   title = 'RishabhsPortfolio';
   classChange: string | undefined;
 
-        
   ngOnInit(): void {
-    this.classChange = 'bg-transparent navbar-light fixed-top';
+  
   }
 }

@@ -12,22 +12,26 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
     this.classChange = 'bg-transparent navbar-dark fixed-top';
     let url = window.location.href;
-    this.page = url.split('/')[3];
+    // Checking
+    // console.log(window.location.pathname);
 
-    // To Remove Nav Effects on Specific page
-    // if (this.page === 'resume') {
-    //   this.classChange = 'bg-light navbar-light ';
-    // } else if (this.page === 'users') {
-    //   this.classChange = 'bg-light navbar-light ';
-    // }
+    this.page = url.split('/')[3];
 
     switch (this.page) {
       case 'resume': {
-        this.classChange = 'bg-light navbar-light ';
+        if (localStorage.getItem('login')) {
+          this.classChange = 'bg-light navbar-light ';
+        } else {
+          window.location.href = 'localhost:4200';
+        }
         break;
       }
       case 'users': {
-        this.classChange = 'bg-light navbar-light ';
+        if (localStorage.getItem('login')) {
+          this.classChange = 'bg-light navbar-light ';
+        } else {
+          window.location.href = '/home';
+        }
         break;
       }
       case 'projects': {
@@ -35,6 +39,10 @@ export class NavbarComponent implements OnInit {
         break;
       }
       case 'project-info': {
+        this.classChange = 'bg-light navbar-light ';
+        break;
+      }
+      case 'signin': {
         this.classChange = 'bg-light navbar-light ';
         break;
       }
