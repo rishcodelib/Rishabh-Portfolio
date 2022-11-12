@@ -1,7 +1,7 @@
 <div class="jumbotron container mt-4">
   <h1 class="display-5 text-center pt-3">Projects</h1>
   <p class="lead text-center">
-    commodi, maiores quis aliquam consequuntur unde! Error et tenetur nulla repellendus nisi ad ea provident nemo
+    Below are my Technical projects with source code & implementation.
   </p>
 </div>
 <hr class="my-6 ">
@@ -10,7 +10,7 @@
   <div class="row">
     <!-- Loop Start -->
     <div class="col-md-6 col-lg-4 col-xl-3 px-2" *ngFor="let project of mp.project">
-      <a href="/project-info/{{project.key}}" class="text-decoration-none text-black " >
+      <a href="/project-info/{{project.id}}" class="text-decoration-none text-black ">
         <div class="card border-0 bg-proj-carousel">
           <img class="card-img-top" src="{{project.imgSrc}}" alt="projectImage">
           <div class="card-body">

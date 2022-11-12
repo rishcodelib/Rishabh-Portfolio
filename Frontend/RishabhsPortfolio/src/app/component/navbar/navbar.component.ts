@@ -12,15 +12,26 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
     this.classChange = 'bg-transparent navbar-dark fixed-top';
     let url = window.location.href;
+    // Checking
+    // console.log(window.location.pathname);
+
     this.page = url.split('/')[3];
 
     switch (this.page) {
       case 'resume': {
-        this.classChange = 'bg-light navbar-light ';
+        if (localStorage.getItem('login')) {
+          this.classChange = 'bg-light navbar-light ';
+        } else {
+          window.location.href = 'localhost:4200';
+        }
         break;
       }
       case 'users': {
-        this.classChange = 'bg-light navbar-light ';
+        if (localStorage.getItem('login')) {
+          this.classChange = 'bg-light navbar-light ';
+        } else {
+          window.location.href = '/home';
+        }
         break;
       }
       case 'projects': {

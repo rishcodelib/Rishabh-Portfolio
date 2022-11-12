@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { environment } from 'src/environments/environment';
 import { DashAllServicesComponent } from './component/dash-all-services/dash-all-services.component';
 import { NewProjectComponent } from './component/new-project/new-project.component';
-import { ProjectInfoComponent } from './component/project-info/project-info/project-info.component';
+import { ProjectInfoComponent } from './component/project-info/project-info.component';
 import { ProjectVWComponent } from './component/project-vw/project-vw.component';
 import { SigninComponent } from './component/signin/signin.component';
 import { SignupComponent } from './component/signup/signup.component';
@@ -25,7 +25,7 @@ const routes: Routes = [
     component: HomePageComponent,
   },
   {
-    path: 'project',
+    path: 'projects',
     component: ProjectPageComponent,
   },
   {
@@ -47,7 +47,7 @@ const routes: Routes = [
   {
     path: 'login',
     redirectTo: '/signin',
-  }
+  },
   // {
   //   path: 'signup',
   //   component: SignupComponent,
@@ -56,10 +56,10 @@ const routes: Routes = [
   //   path: 'dashboard',
   //   component: DashAllServicesComponent,
   // },
-  // {
-  //   path: 'users',
-  //   component: UsersComponent,
-  // },
+  {
+    path: 'users',
+    component: UsersComponent,
+  },
   // {
   //   path: 'projects',
   //   component: ProjectVWComponent,
@@ -68,10 +68,10 @@ const routes: Routes = [
   //   path: 'add-project',
   //   component: NewProjectComponent,
   // },
-  // {
-  //   path: 'project-info',
-  //   component: ProjectInfoComponent,
-  // },
+  {
+    path: 'project-info',
+    component: ProjectInfoComponent,
+  },
   // {
   //   path: 'user-info',
   //   component: UserInfoComponent,

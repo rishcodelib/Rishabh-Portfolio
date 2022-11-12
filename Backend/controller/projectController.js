@@ -37,6 +37,21 @@ exports.getAllProjects = asyncHandler(async (_req, res) => {
 
 })
 
+exports.getProjectById = async (req, res) => {
+  try {
+    console.log(`Project with ID ${req.params.id} Found`)
+    const project = await Project.findById(req.params.id)
+    res.status(200)
+    res.json(project)
+    if (!project) {
+      res.status(400)
+      throw new Error('User not found!')
+    }
+  } catch (error) {
+    res.json(`Error is : ${error.message}`)
+  }
+}
+
 exports.deleteProjectById = asyncHandler(async (_req, res) => {
   const id = req.params.id;
   res.json(`ID recieved at back ek is ${id}`)

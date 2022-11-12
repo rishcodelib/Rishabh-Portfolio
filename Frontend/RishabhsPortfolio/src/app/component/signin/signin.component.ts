@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
 import { User } from 'src/app/entity/User/user';
 import { UserServiceService } from 'src/app/service/user-service/user-service.service';
 
@@ -15,7 +16,7 @@ export class SigninComponent implements OnInit {
     password: new FormControl(''),
   });
 
-  constructor(private uServe: UserServiceService) {}
+  constructor(private uServe: UserServiceService, private router: Router) {}
 
   onSubmit() {
     // TODO: Use EventEmitter with form value
@@ -24,10 +25,12 @@ export class SigninComponent implements OnInit {
         // console.log(res);
         let id = JSON.parse(JSON.stringify(res))._id;
         localStorage.setItem('login', id);
+        this.router.navigate(['/users'])
       },
       (err) => {
         console.log(err.error);
         localStorage.removeItem('login');
+        
       }
     );
   }
