@@ -12,11 +12,18 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Use NodeJs $
+      - name: Use NodeJs 
         uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+          cache: 'npm'
+      - name: Install Dependencies
+        run: npm ci
+      - name: Lint
+        run: npm run Lint
 
-      - name: Getting into directory
-        run: cd Frontend/RishabhsPortfolio/
+      # - name: Getting into directory
+      #   run: cd Frontend/RishabhsPortfolio/
 
       - name: cache node modules
         id: cache-nodemodules
@@ -37,11 +44,11 @@ jobs:
           steps.cache-nodemodules.outputs.cache-hit !='true'
         run: npm install n -g
 
-      - name: installing angular
-        run: npm install -g @angular/cli@latest    
+      # - name: installing angular
+      #   run: npm install -g @angular/cli@latest    
 
       - name: Build
-        run: npm run build 
+        run: npm run build:prod
 
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
