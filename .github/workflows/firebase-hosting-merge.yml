@@ -13,7 +13,8 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Getting into directory
-        working-directory: /Frontend/RishabhsPortfolio/
+        
+        
 
       - name: Use NodeJs 
         uses: actions/setup-node@v2
@@ -42,6 +43,7 @@ jobs:
         run: npm install n -g
      
       - name: Build
+        working-directory: ./Frontend/RishabhsPortfolio/
         run: npm run build:prod
 
       - uses: FirebaseExtended/action-hosting-deploy@v0
