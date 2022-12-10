@@ -17,10 +17,8 @@ jobs:
         with:
           node-version: '16'
           cache: 'npm'
-      - name: Install Dependencies
-        run: npm ci
-      - name: Lint
-        run: npm run Lint
+    
+     
 
       # - name: Getting into directory
       #   run: cd Frontend/RishabhsPortfolio/
@@ -43,7 +41,8 @@ jobs:
         if: 
           steps.cache-nodemodules.outputs.cache-hit !='true'
         run: npm install n -g
-
+      - name: Lint
+        run: npm run Lint
       # - name: installing angular
       #   run: npm install -g @angular/cli@latest    
 
