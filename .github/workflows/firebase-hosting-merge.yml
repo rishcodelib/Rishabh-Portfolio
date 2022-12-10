@@ -22,7 +22,8 @@ jobs:
           node-version: '16'
           cache: 'npm'
     
-      
+      - name: clean npm cache
+        run : npm cache clean --force
       # - name: cache node modules
       #   id: cache-nodemodules
       #   uses: actions/cache@v2
