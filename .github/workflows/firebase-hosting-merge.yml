@@ -41,8 +41,7 @@ jobs:
         if: 
           steps.cache-nodemodules.outputs.cache-hit !='true'
         run: npm install n -g
-      - name: Lint
-        run: npm run Lint
+     
       # - name: installing angular
       #   run: npm install -g @angular/cli@latest    
 
