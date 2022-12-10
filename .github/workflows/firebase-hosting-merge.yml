@@ -35,7 +35,7 @@ jobs:
       - name: Install Dependencies
         if: 
           steps.cache-nodemodules.outputs.cache-hit !='true'
-        run: npm install 
+        run: npm install n -g
       - name: installing angular
         run: npm install -g @angular/cli@latest    
       - name: Build
