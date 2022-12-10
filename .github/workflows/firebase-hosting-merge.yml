@@ -18,7 +18,8 @@ jobs:
           node-version: '16'
           cache: 'npm'
     
-     
+      - name: Getting into directory
+        run: cd Frontend/RishabhsPortfolio/
 
       
 
@@ -40,8 +41,7 @@ jobs:
         if: 
           steps.cache-nodemodules.outputs.cache-hit !='true'
         run: npm install n -g
-      - name: Getting into directory
-        run: cd Frontend/RishabhsPortfolio/
+     
       # - name: installing angular
       #   run: npm install -g @angular/cli@latest    
 
