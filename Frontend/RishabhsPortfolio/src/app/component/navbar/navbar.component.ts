@@ -1,4 +1,10 @@
-import { Component, HostListener, OnInit, Renderer2 } from '@angular/core';
+import {
+  Component,
+  HostListener,
+  Input,
+  OnInit,
+  Renderer2,
+} from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -6,6 +12,7 @@ import { Component, HostListener, OnInit, Renderer2 } from '@angular/core';
   styleUrls: ['./navbar.component.sass'],
 })
 export class NavbarComponent implements OnInit {
+
   constructor(private renderer: Renderer2) {}
   page: string | undefined;
   classChange: any | '';
@@ -16,9 +23,11 @@ export class NavbarComponent implements OnInit {
     // console.log(window.location.pathname);
 
     this.page = url.split('/')[3];
+    console.log(this.page);
+   
 
     switch (this.page) {
-      case 'resume': {
+      case 'resumes': {
         if (localStorage.getItem('login')) {
           this.classChange = 'bg-light navbar-light ';
         } else {
@@ -36,6 +45,12 @@ export class NavbarComponent implements OnInit {
       }
       case 'projects': {
         this.classChange = 'bg-light navbar-light ';
+
+        break;
+      }
+      case 'resume': {
+        this.classChange = 'bg-light navbar-light ';
+
         break;
       }
       case 'project-info': {
@@ -46,6 +61,7 @@ export class NavbarComponent implements OnInit {
         this.classChange = 'bg-light navbar-light ';
         break;
       }
+
       default: {
         this.classChange = 'bg-transparent navbar-dark  fixed-top ';
         break;

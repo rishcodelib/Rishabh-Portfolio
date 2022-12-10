@@ -18,7 +18,8 @@ import { ResumePageComponent } from './pages/resume-page/resume-page.component';
 const routes: Routes = [
   {
     path: '',
-    component: HomePageComponent,
+    redirectTo: 'home',
+    pathMatch: 'full',
   },
   {
     path: 'home',
@@ -27,11 +28,9 @@ const routes: Routes = [
   {
     path: 'projects',
     component: ProjectPageComponent,
+    
   },
-  {
-    path: 'about',
-    component: AboutPageComponent,
-  },
+
   {
     path: 'contact',
     component: ContactPageComponent,
@@ -69,13 +68,17 @@ const routes: Routes = [
   //   component: NewProjectComponent,
   // },
   {
-    path: 'project-info',
+    path: 'projects/:key',
     component: ProjectInfoComponent,
   },
   // {
   //   path: 'user-info',
   //   component: UserInfoComponent,
   // },
+  {
+    path:'project-info/:key',
+    component:ProjectInfoComponent
+  }
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

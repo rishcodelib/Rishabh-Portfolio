@@ -45,6 +45,7 @@ export class AllProjectsService {
     },
     {
       key: 4,
+      id: '6314b56a6b629c689bf74a234',
       projectName: 'Shree-Trends',
       alias: 'WareHouse Management System',
       description:
@@ -69,6 +70,7 @@ export class AllProjectsService {
     },
     {
       key: 6,
+      id: '6314b7427be0bda93598bd123',
       projectName: 'My Market',
       alias: null,
       description: 'A Complete Web Shopping Application.',
