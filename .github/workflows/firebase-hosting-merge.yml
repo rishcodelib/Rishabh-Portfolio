@@ -11,9 +11,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: cd Frontend/RishabhsPortfolio/
-      - run: rm -f Frontend/RishabhsPortfolio/dist/rishabhs-portfolio/
-      - run: ng build 
+      - name: Getting into directory
+        run: cd Frontend/RishabhsPortfolio/
+      - name: npm Dependencies
+        run: npm install
+      - name: removing old files
+        run: rm -f Frontend/RishabhsPortfolio/dist/rishabhs-portfolio/
+      - name: Build
+        run: ng build 
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
