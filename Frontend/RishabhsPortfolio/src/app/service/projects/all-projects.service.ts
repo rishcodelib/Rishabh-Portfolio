@@ -24,7 +24,7 @@ export class AllProjectsService {
       key: 2,
       id: '6314b3a06b629c689bf74a1f',
       projectName: 'Personal Portfolio',
-      description: 'Lorem Ipsum Dolor Sit Description.. ',
+      description: 'Personal portfolio website created to showcase projects and details about myself. ',
       liveUrl: 'https://rishabh-aggarwal.com',
       gitUrl: 'https://github.com/rishcodelib',
       demoUrl: 'https://rishabhaggarwal-bae83.web.app/home',
