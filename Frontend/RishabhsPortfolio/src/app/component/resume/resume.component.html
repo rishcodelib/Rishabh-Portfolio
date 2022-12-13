@@ -1,5 +1,15 @@
-<section class="resume container border mt-2">
-  <div class="header  ">
+<span *ngIf=" (resume)">
+<hr>
+  <div class="container jumbotron bg-light p-5 text-center border rounded">
+    <div class=" display-6  ">
+      Resume service is <span class="text-danger "> NOT </span> available. <br />
+    </div>
+  </div>
+  <hr>
+</span>
+<section class="resume container border mt-2" *ngIf="!(resume)">
+
+  <div class="header ">
     <div class="row">
       <div class="col-md-4 text-start">
         <h6 class="display-6 "> Rishabh Aggarwal</h6>

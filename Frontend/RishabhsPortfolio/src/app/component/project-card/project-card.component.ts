@@ -18,16 +18,21 @@ export class ProjectCardComponent implements OnInit {
   public tag: any;
   @Input() public pservice: any;
   ngOnInit(): void {}
-  constructor(public mp: AllProjectsService) {
-    mp.project.forEach((myproj: any) => {
-      this.title = myproj.projectName;
-      this.src = myproj.imgSrc;
-      this.desc = myproj.description;
-      this.url = myproj.liveurl;
-      this.git = myproj.gitUrl;
-      this.tag = myproj.tag;
-    });
 
-    console.log(mp);
+  constructor(public mp: AllProjectsService) {
+    try {
+      mp.project.forEach((myproj: any) => {
+        this.title = myproj.projectName;
+        this.src = myproj.imgSrc;
+        this.desc = myproj.description;
+        this.url = myproj.liveurl;
+        this.git = myproj.gitUrl;
+        this.tag = myproj.tag;
+      });
+    } catch (e) {
+      console.log(e);
+    }
+
+    console.log(`Value of MP is ${mp.project}`);
   }
 }

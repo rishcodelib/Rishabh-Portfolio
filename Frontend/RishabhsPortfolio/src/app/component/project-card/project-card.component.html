@@ -5,23 +5,36 @@
   </p>
 </div>
 <hr class="my-6 ">
-<!-- <div *ngIf="id"> -->
-  <div class="project-card container">
-    <div class="row">
-      <!-- Loop Start -->
-      <div class="col-md-6 col-lg-4 col-xl-3 px-2" *ngFor="let project of mp.project">
-        <a [routerLink]="[project.id]" class="text-decoration-none text-black ">
-          <div class="card border-0 bg-proj-carousel">
-            <img class="card-img-top" src="{{project.imgSrc}}" alt="projectImage">
-            <div class="card-body">
-              <h5 class="card-title">{{project.projectName}}</h5>
-              <p class="card-text">{{project.description}}</p>
-              <span *ngFor="let item of project.tag">
-                <app-project-tag class="tag" [tag]="item"></app-project-tag>
-              </span>
-            </div>
-            <hr class="divider">
-            <!-- <div class="row">
+
+<!-- Project Service Not Available -->
+<span *ngIf=" !(mp.project)">
+
+  <div class="container jumbotron bg-light p-5 text-center border rounded">
+    <div class=" display-6  ">
+      Project service is <span class="text-danger "> NOT </span> available. <br />
+    </div>
+  </div>
+  <hr>
+</span>
+
+<!-- ************************** -->
+
+<div class="project-card container">
+  <div class="row">
+    <!-- Loop Start -->
+    <div class="col-md-6 col-lg-4 col-xl-3 px-2" *ngFor="let project of mp.project">
+      <a [routerLink]="[project.id]" class="text-decoration-none text-black ">
+        <div class="card border-0 bg-proj-carousel">
+          <img class="card-img-top" src="{{project.imgSrc}}" alt="projectImage">
+          <div class="card-body">
+            <h5 class="card-title">{{project.projectName}}</h5>
+            <p class="card-text">{{project.description}}</p>
+            <span *ngFor="let item of project.tag">
+              <app-project-tag class="tag" [tag]="item"></app-project-tag>
+            </span>
+          </div>
+          <hr class="divider">
+          <!-- <div class="row">
               <div *ngIf="project.liveUrl" class="col-md-4  ">
                 <a href="{{project.liveUrl}}" class="btn process-btn btn-live">LIVE</a>
               </div>
@@ -32,16 +45,16 @@
                 <a href="{{project.gitUrl}}" class="btn process-btn btn-git ">GITHUB</a>
               </div>
             </div> -->
-            <!-- </div>Card Body
+          <!-- </div>Card Body
           </div>
         </a>
       </div>
       <!-- Loop END -->
-    </div>
-  <!-- </div> -->
+        </div>
+        <!-- </div> -->
 
-<!-- </div> -->
-<!-- <nav aria-label="Page navigation example">
+        <!-- </div> -->
+        <!-- <nav aria-label="Page navigation example">
   <ul class="pagination justify-content-center">
     <li class="page-item disabled">
       <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>

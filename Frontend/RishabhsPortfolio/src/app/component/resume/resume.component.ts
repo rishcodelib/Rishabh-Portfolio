@@ -9,6 +9,7 @@ export class ResumeComponent implements OnInit {
   constructor(private renderer: Renderer2) {}
 
   classChange = '';
+  resume = true;
   ngOnInit(): void {
     this.classChange = 'bg-transparent navbar-light fixed-top';
   }
