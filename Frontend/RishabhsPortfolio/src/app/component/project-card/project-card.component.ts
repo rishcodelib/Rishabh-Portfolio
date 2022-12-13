@@ -8,31 +8,22 @@ import { AllProjectsService } from 'src/app/service/projects/all-projects.servic
   styleUrls: ['./project-card.component.sass'],
 })
 export class ProjectCardComponent implements OnInit {
-  prjList: any;
-
-  public src: any;
-  public title: any;
-  public desc: any;
-  public url: any;
-  public git: any;
-  public tag: any;
   @Input() public pservice: any;
-  ngOnInit(): void {}
-
+  value: undefined | any;
+  ngOnInit(): void {
+    console.log("VALUE is" +this.value);
+  }
+  
   constructor(public mp: AllProjectsService) {
-    try {
-      mp.project.forEach((myproj: any) => {
-        this.title = myproj.projectName;
-        this.src = myproj.imgSrc;
-        this.desc = myproj.description;
-        this.url = myproj.liveurl;
-        this.git = myproj.gitUrl;
-        this.tag = myproj.tag;
-      });
-    } catch (e) {
-      console.log(e);
-    }
-
-    console.log(`Value of MP is ${mp.project}`);
+    this.value = this.mp.getAllProjects().subscribe(
+      (res: any) => {
+        this.value = res;
+        console.log(res);
+      },
+      (err: any) => {
+        console.log(err);
+        this.value = null;
+      }
+    );
   }
 }

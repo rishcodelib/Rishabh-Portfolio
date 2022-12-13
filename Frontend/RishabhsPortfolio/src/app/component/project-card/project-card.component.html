@@ -7,7 +7,7 @@
 <hr class="my-6 ">
 
 <!-- Project Service Not Available -->
-<span *ngIf=" !(mp.project)">
+<span *ngIf=" !(value)">
 
   <div class="container jumbotron bg-light p-5 text-center border rounded">
     <div class=" display-6  ">
@@ -22,14 +22,19 @@
 <div class="project-card container">
   <div class="row">
     <!-- Loop Start -->
-    <div class="col-md-6 col-lg-4 col-xl-3 px-2" *ngFor="let project of mp.project">
-      <a [routerLink]="[project.id]" class="text-decoration-none text-black ">
+    <div class="col-md-6 col-lg-4 col-xl-3 px-2" *ngFor="let project of value">
+      <a [routerLink]="[project._id]" class="text-decoration-none text-black ">
         <div class="card border-0 bg-proj-carousel">
-          <img class="card-img-top" src="{{project.imgSrc}}" alt="projectImage">
+          <!-- <img class="card-img-top" src="{{project.imgSrc}}" alt="projectImage"> -->
+          <img class="card-img-top" src="../assets/images/no_image.png" alt="projectImage">
           <div class="card-body">
-            <h5 class="card-title">{{project.projectName}}</h5>
+            <h5 class="card-title">{{project.projectName}} <span class="text-secondary">
+                [{{project.shortName}}]
+              </span></h5>
             <p class="card-text">{{project.description}}</p>
-            <span *ngFor="let item of project.tag">
+
+            <!-- <p class="card-text"> Status: {{project.status}}</p> -->
+            <span *ngFor="let item of project.techStack">
               <app-project-tag class="tag" [tag]="item"></app-project-tag>
             </span>
           </div>

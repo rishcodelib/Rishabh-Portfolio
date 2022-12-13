@@ -9,26 +9,26 @@ import { AllProjectsService } from 'src/app/service/projects/all-projects.servic
   styleUrls: ['./project-info.component.sass'],
 })
 export class ProjectInfoComponent implements OnInit {
-  id: string | null | undefined;
-  products: any = [];
+  products: any;
   key: any;
-  prjList: undefined;
 
   constructor(private mp: AllProjectsService, private route: ActivatedRoute) {}
   ngOnInit() {
     this.route.paramMap.subscribe((params) => {
       let param = params.get('key');
+      this.key = param;
       console.log('Key: ' + param);
     });
 
-    this.getProjectData();
-  }
-
-  private getProjectData() {
-    this.mp.getProject(this.id).subscribe((res) => {
-      // console.log(res);
-      this.products = JSON.parse(JSON.stringify(res));
-      console.log(this.products);
-    });
+    this.mp.getProject(this.key).subscribe(
+      (res: any) => {
+        this.products = res;
+        console.log('value in products' + res);
+      },
+      (err: any) => {
+        console.log(err);
+        this.products = null;
+      }
+    );
   }
 }

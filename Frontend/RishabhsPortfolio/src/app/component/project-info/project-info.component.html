@@ -1,10 +1,19 @@
+<span *ngIf=" !(products)">
 
+  <div class="container jumbotron bg-light p-5 text-center border rounded">
+    <div class=" display-6  ">
+      Project service is <span class="text-danger "> NOT </span> available. <br />
+    </div>
+  </div>
+  <hr>
+</span>
 
 <div class="container ">
   <div class="row">
     <div class="col-md-12 text-center">
       <h4> {{products.projectName}} [{{products.shortName}}]</h4>
       <p>{{products.createdAt}}</p>
+      <h1> KEY : {{key}}</h1>
       <hr class="w-25 m-auto mb-3">
     </div>
     <div class="col-md-4">
@@ -14,8 +23,8 @@
       <p>
         {{products.description}}
       </p>
-      
-      
+
+
       <p>Tech Stack: <span *ngFor="let item of products.techStack">{{item}} </span>
       </p>
       <span *ngIf="products.url.live" class="col-md-4  ">
