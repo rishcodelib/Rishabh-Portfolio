@@ -76,7 +76,7 @@ const routes: Routes = [
   //   component: UserInfoComponent,
   // },
   {
-    path:'project-info/:key',
+    path:'project-info',
     component:ProjectInfoComponent
   }
 ];

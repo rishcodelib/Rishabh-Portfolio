@@ -111,7 +111,18 @@ export class AllProjectsService {
   constructor(private http: HttpClient) {}
 
   getAllProjects() {
-    return this.http.get(this.uri);
+    if(localStorage.getItem('projects')){
+       localStorage.getItem('projects');
+       return this.http.get(this.uri);
+    }
+    else{
+     const data= this.http.get(this.uri);
+      localStorage.setItem('projects', JSON.stringify(data));
+      console.log('data +' + data);
+      
+      return this.http.get(this.uri);
+    }
+    // return this.http.get(this.uri);
   }
 
   getProject(key: any) {

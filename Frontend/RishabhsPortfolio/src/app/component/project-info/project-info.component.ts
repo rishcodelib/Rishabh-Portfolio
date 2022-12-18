@@ -10,14 +10,16 @@ import { AllProjectsService } from 'src/app/service/projects/all-projects.servic
 })
 export class ProjectInfoComponent implements OnInit {
   products: any;
-  key: any;
+  key: any ;
 
   constructor(private mp: AllProjectsService, private route: ActivatedRoute) {}
   ngOnInit() {
     this.route.paramMap.subscribe((params) => {
       let param = params.get('key');
       this.key = param;
-      console.log('Key: ' + param);
+      // Temp key
+      // this.key = '6314b3a06b629c689bf74a1f';
+      console.log('Key: ' + param + ' ' + this.key);
     });
 
     this.mp.getProject(this.key).subscribe(

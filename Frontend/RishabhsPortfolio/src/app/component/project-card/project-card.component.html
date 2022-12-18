@@ -26,16 +26,17 @@
       <a [routerLink]="[project._id]" class="text-decoration-none text-black ">
         <div class="card border-0 bg-proj-carousel">
           <!-- <img class="card-img-top" src="{{project.imgSrc}}" alt="projectImage"> -->
-          <img class="card-img-top" src="../assets/images/no_image.png" alt="projectImage">
+          <img class="card-img-top" src={{project.imageSrc}} alt="projectImage">
           <div class="card-body">
             <h5 class="card-title">{{project.projectName}} <span class="text-secondary">
-                [{{project.shortName}}]
-              </span></h5>
-            <p class="card-text">{{project.description}}</p>
+              [{{project.shortName}}]
 
+            </span></h5>
+            <p class="card-text">{{project.description}}</p>
+            
             <!-- <p class="card-text"> Status: {{project.status}}</p> -->
             <span *ngFor="let item of project.techStack">
-              <app-project-tag class="tag" [tag]="item"></app-project-tag>
+              <app-project-tag class="tag btn btn-tag" [tag]="item"></app-project-tag>
             </span>
           </div>
           <hr class="divider">
