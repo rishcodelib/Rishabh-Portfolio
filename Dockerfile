@@ -5,7 +5,7 @@ ENV SERVER_PORT production
 ENV USER_NAME = RISHABH AGGARWAL
 
 #Create app directory
-WORKDIR /Backend/
+WORKDIR /Backend
 
 #Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
@@ -20,6 +20,6 @@ RUN npm install
 
 COPY . .
 #Expose port
-EXPOSE 8080
+EXPOSE 4000
 
-CMD [ "node", "server.js"]
+CMD node server.js
