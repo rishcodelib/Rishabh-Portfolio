@@ -8,13 +8,17 @@
 
 <!-- Project Service Not Available -->
 <span *ngIf=" !(value)">
-
-  <div class="container jumbotron bg-light p-5 text-center border rounded">
-    <div class=" display-6  ">
-      Project service is <span class="text-danger "> NOT </span> available. <br />
+  <div class="container w-25  ">
+    <div class="alert alert-danger " role="alert">
+      <h4 class="alert-heading">Under Maintenance!</h4>
+      <hr>
+      <p class="mb-0">
+        This web application is under Maintenance. . .</p>
     </div>
   </div>
-  <hr>
+
+
+
 </span>
 
 <!-- ************************** -->
@@ -29,11 +33,11 @@
           <img class="card-img-top" src={{project.imageSrc}} alt="projectImage">
           <div class="card-body">
             <h5 class="card-title">{{project.projectName}} <span class="text-secondary">
-              [{{project.shortName}}]
+                [{{project.shortName}}]
 
-            </span></h5>
+              </span></h5>
             <p class="card-text">{{project.shortDesc}}</p>
-            
+
             <!-- <p class="card-text"> Status: {{project.status}}</p> -->
             <span *ngFor="let item of project.techStack">
               <app-project-tag class="tag btn btn-tag" [tag]="item"></app-project-tag>
