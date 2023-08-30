@@ -4,15 +4,17 @@
 name: Deploy to Firebase Hosting on PR
 on:
   push:
-    branches: [ "master" ]
+    branches: ["master"]
   pull_request:
-    branches: [ "master" ]
+    branches: ["master"]
 jobs:
   build_and_preview:
     if: "${{ github.event.pull_request.head.repo.full_name == github.repository }}"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          presis-credentials: false
       - uses: actions/setup-node@v2
         with:
           node-version: "16.x"
