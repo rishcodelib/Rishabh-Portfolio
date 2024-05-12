@@ -1,5 +1,5 @@
 export class Project {
-  projectName: String;
+  private projectName: String;
   shortName: String;
   description: String;
   category: String;

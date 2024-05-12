@@ -25,11 +25,11 @@ export class UserServiceService {
     return this.http.get(payload);
   }
 
-  signIn(user: User) {
-    const payload = this.auth + '/signin';
-    return this.http.post(payload, {
-      email: user.email,
-      password: user.password,
-    });
-  }
+  // signIn(user: User) {
+  //   const payload = this.auth + '/signin';
+  //   return this.http.post(payload, {
+  //     email: user.email,
+  //     password: user.password,
+  //   });
+  // }
 }
