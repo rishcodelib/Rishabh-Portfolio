@@ -5,6 +5,8 @@ name: Node.js CI
 
 on:
   push:
+    paths: 
+      - 'RishabhsPortfolio/**'
     branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
@@ -21,9 +23,6 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - name: change directory
-      run: cd RishabhsPortfolio/
-      
     - uses: actions/checkout@v4
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
