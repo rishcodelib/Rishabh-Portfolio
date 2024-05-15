@@ -5,6 +5,8 @@ import {
   OnInit,
   Renderer2,
 } from '@angular/core';
+import { environment } from 'src/environments/environment';
+environment
 
 @Component({
   selector: 'app-navbar',
@@ -67,6 +69,13 @@ export class NavbarComponent implements OnInit {
         break;
       }
     }
+
+    console.log("Prod : " +environment.production);
+    console.log("Env : " + environment.BASE_URL);
+    // console.log("DEV : " + environment.development.BASE_URL);
+
+
+
   }
 
   @HostListener('window:scroll', [])

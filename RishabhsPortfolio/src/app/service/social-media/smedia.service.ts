@@ -6,10 +6,10 @@ import { Injectable } from '@angular/core';
 export class SmediaService {
   socialMediaLinks: any = [
     {
-      facebook: 'https://www.facbook.com/iam.rishabhhh',
-      youtube: 'http://www.youtube.com/rishabh23aggarwal',
-      instagram: 'https://www.instagram.com/iam.rishabhh/',
-      snapchat: 'https://www.snapchat.com/iam.rishabhh',
+      facebook: 'https://www.facebook.com/iam.rishabhhh',
+      youtube: 'http://www.youtube.com/@RishhiiiMusic',
+      instagram: 'https://www.instagram.com/iam.rishhiii/',
+      snapchat: 'https://www.snapchat.com/iam.rishhiii',
     },
   ];
   constructor() {}
