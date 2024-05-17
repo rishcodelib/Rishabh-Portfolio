@@ -14,6 +14,7 @@ import { ContactPageComponent } from './pages/contact-page/contact-page.componen
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ProjectPageComponent } from './pages/project-page/project-page.component';
 import { ResumePageComponent } from './pages/resume-page/resume-page.component';
+import { DisclaimerComponent } from './pages/disclaimer/disclaimer.component';
 
 const routes: Routes = [
   {
@@ -46,6 +47,10 @@ const routes: Routes = [
   {
     path: 'login',
     redirectTo: '/signin',
+  },
+  {
+    path: 'disclaimer',
+    component: DisclaimerComponent
   },
   // {
   //   path: 'signup',

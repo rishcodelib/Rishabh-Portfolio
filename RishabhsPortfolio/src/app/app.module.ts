@@ -36,6 +36,7 @@ import { NewProjectComponent } from './component/new-project/new-project.compone
 import { BsAlertComponent } from './component/bs-alert/bs-alert.component';
 import { ProjectInfoComponent } from './component/project-info/project-info.component';
 import { UserInfoComponent } from './component/user-info/user-info.component';
+import { DisclaimerComponent } from './pages/disclaimer/disclaimer.component';
 
 
 @NgModule({
@@ -71,6 +72,7 @@ import { UserInfoComponent } from './component/user-info/user-info.component';
     BsAlertComponent,
     ProjectInfoComponent,
     UserInfoComponent,
+    DisclaimerComponent,
    
   ],
   imports: [

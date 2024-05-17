@@ -14,6 +14,7 @@ environment
   styleUrls: ['./navbar.component.sass'],
 })
 export class NavbarComponent implements OnInit {
+environment: any;
 
   constructor(private renderer: Renderer2) {}
   page: string | undefined;
@@ -60,6 +61,10 @@ export class NavbarComponent implements OnInit {
         break;
       }
       case 'signin': {
+        this.classChange = 'bg-light navbar-light ';
+        break;
+      }
+      case 'disclaimer': {
         this.classChange = 'bg-light navbar-light ';
         break;
       }
