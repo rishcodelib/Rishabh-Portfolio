@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { UntypedFormControl, UntypedFormGroup } from '@angular/forms';
 import { User } from 'src/app/entity/User/user';
 import { UserServiceService } from 'src/app/service/user-service/user-service.service';
 
@@ -9,12 +9,12 @@ import { UserServiceService } from 'src/app/service/user-service/user-service.se
   styleUrls: ['./signup.component.sass'],
 })
 export class SignupComponent implements OnInit {
-  signupForm = new FormGroup({
-    firstName: new FormControl(''),
-    lastName: new FormControl(''),
-    email: new FormControl(''),
-    password: new FormControl(''),
-    contact: new FormControl(''),
+  signupForm = new UntypedFormGroup({
+    firstName: new UntypedFormControl(''),
+    lastName: new UntypedFormControl(''),
+    email: new UntypedFormControl(''),
+    password: new UntypedFormControl(''),
+    contact: new UntypedFormControl(''),
   });
 
   constructor(private uServe: UserServiceService) {}

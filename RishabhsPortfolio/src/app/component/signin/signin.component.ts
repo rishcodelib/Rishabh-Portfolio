@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { UntypedFormControl, UntypedFormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { User } from 'src/app/entity/User/user';
 import { UserServiceService } from 'src/app/service/user-service/user-service.service';
@@ -11,9 +11,9 @@ import { UserServiceService } from 'src/app/service/user-service/user-service.se
 })
 export class SigninComponent implements OnInit {
   user!: User;
-  signinForm = new FormGroup({
-    email: new FormControl(''),
-    password: new FormControl(''),
+  signinForm = new UntypedFormGroup({
+    email: new UntypedFormControl(''),
+    password: new UntypedFormControl(''),
   });
 
   constructor(private uServe: UserServiceService, private router: Router) {}

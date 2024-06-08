@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {
-  FormControl,
-  FormGroup,
+  UntypedFormControl,
+  UntypedFormGroup,
 } from '@angular/forms';
 
 @Component({
@@ -13,11 +13,11 @@ export class ContactComponent implements OnInit {
   firstName: any;
   lastName: any;
 
-  profileForm = new FormGroup({
-    firstName: new FormControl(''),
-    lastName: new FormControl(''),
-    email: new FormControl(''),
-    contact: new FormControl(''),
+  profileForm = new UntypedFormGroup({
+    firstName: new UntypedFormControl(''),
+    lastName: new UntypedFormControl(''),
+    email: new UntypedFormControl(''),
+    contact: new UntypedFormControl(''),
   });
 
   onSubmit() {
