@@ -1,0 +1,60 @@
+import React from "react";
+import 'https://kit.fontawesome.com/059627b691.js'
+
+
+function divider() {
+  // var item;
+  // if (item == null) {
+  //   this.item = ['fa-java', 'fa-angular', 'fa-react']
+  // }
+  // item.forEach(element => {
+   
+  // });
+
+  return <section class="techDivider">
+
+    <div class="container-fluid bg-light py-3">
+      <div class="row">
+        <div class="col-md-1 col-4  d-flex justify-content-center    ">
+          <i class="fab fa-java fa-3x"></i>
+        </div>
+        <div class="col-md-1 col-4 d-flex justify-content-center  ">
+          <i class="fab fa-angular fa-3x"></i>
+        </div>
+        <div class="col-md-1 col-4 d-flex justify-content-center  ">
+          <i class="fab fa-envira fa-3x"></i>
+        </div>
+        <div class="col-md-1 col-4 d-flex justify-content-center  ">
+          <i class="fab fa-js fa-3x"></i>
+        </div>
+        <div class="col-md-1 col-4 d-flex justify-content-center  ">
+          <i class="fab fa-docker fa-3x"></i>
+        </div>
+        <div class="col-md-1 col-4 d-flex justify-content-center  ">
+          <i class="fa fa-database fa-3x"></i>\
+        </div>
+        <div class="col-md-1 col-4 d-flex justify-content-center  ">
+          <i class="fab fa-node fa-3x"></i>
+        </div>
+        <div class="col-md-1 col-4 d-flex justify-content-center  ">
+          <i class="fab fa-npm fa-3x"></i>
+        </div>
+        <div class="col-md-1 col-4 d-flex justify-content-center  ">
+          <i class="fab fa-jenkins fa-3x"></i>
+        </div>
+        <div class="col-md-1 col-4 d-flex justify-content-center  ">
+          <i class="fab fa-sass fa-3x"></i>
+        </div>
+        <div class="col-md-1 col-4 d-flex justify-content-center  ">
+          <i class="fab fa-css3-alt fa-3x"></i>
+        </div>
+        <div class="col-md-1 col-4 d-flex justify-content-center  ">
+          <i class="fab fab fa-aws fa-3x"></i>
+        </div>
+
+      </div>
+    </div>
+  </section>
+}
+
+export default divider 
