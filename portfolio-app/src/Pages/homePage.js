@@ -1,13 +1,17 @@
 import React from "react";
 import About from '../Components/aboutComponent/about'
 import Divider from '../Components/divider/divider.js'
-const HomePage = () => {
+import Contact from '../Components/contactComponent/Contact.js'
+import HeroImage from '../Components/heroImageComponent/heroImage.js'
+const homePage = () => {
   return (
     <>
+      <HeroImage />
       <About />
       <Divider />
+      <Contact />
     </>
   );
 };
 
-export default HomePage;
+export default homePage;

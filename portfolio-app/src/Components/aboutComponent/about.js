@@ -1,4 +1,5 @@
 import React from "react";
+import "./about.css";
 
 function about() {
   return <section class="about-me " id="about">

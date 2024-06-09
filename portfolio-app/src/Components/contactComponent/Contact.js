@@ -1,4 +1,5 @@
 import React from "react";
+import './contact.css';
 
 function Contact() {
   return <div>
@@ -51,20 +52,20 @@ function Contact() {
             <div class="row">
               <div class="col-md-6">
                 <label for="first-name">First Name: </label> <br />
-                <input id="first-name" type="text" class="form-control" formControlName="firstName"/>
+                <input id="first-name" type="text" class="form-control" formControlName="firstName" />
               </div>
               <div class="col-md-6">
                 <label for="last-name">Last Name: </label> <br />
-                <input id="last-name" type="text" class="form-control" formControlName="lastName"/>
+                <input id="last-name" type="text" class="form-control" formControlName="lastName" />
               </div>
               <div class="col-md-6">
                 <label for="email">Email: </label> <br />
-                <input id="email" type="email" class="form-control" formControlName="email"/>
+                <input id="email" type="email" class="form-control" formControlName="email" />
               </div>
 
               <div class="col-md-6">
                 <label for="contact">Contact: </label> <br />
-                <input id="contact" type="number" class=" form-control" formControlName="contact"/>
+                <input id="contact" type="number" class=" form-control" formControlName="contact" />
               </div>
               <div class="col-md-12 mt-2 text-center">
                 {/* <!-- <p>Complete the form to enable button.</p> --> */}
