@@ -1,27 +1,24 @@
-// import logo from './logo.svg';
 import './App.css';
-import Navbar from './Components/NavbarComponent/navbar'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js';
-import About from './Components/aboutComponent/about.js'
-import Divider from './Components/divider/divider.js'
+
+import Main from './Layouts/Main/Main.js';
+import HomePage from './Pages/homePage.js';
 import Contact from './Components/contactComponent/Contact.js';
-import Footer from './Layouts/Footer/Footer.js'
+import ProjectPage from './Pages/projectPage.js'
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <div>
-        <img src="/Assets/images/background.jpeg" class="img-fluid" alt="..." />
-      </div>
-      <About />
-      <Divider />
-      <Contact />
-      <Footer />
-      {/* <header className="App-header">
-      </header> */}
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Main />}>
+          <Route index element={<HomePage />} />
+          <Route path="projects" element={<ProjectPage />} />
+          <Route path="contact" element={<Contact />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
